@@ -31,7 +31,7 @@ class Admin extends Database
     }
     public function logout(){
         session_destroy();
-        echo "<script>window.location = 'index.php'</script>";
+        echo "<script>window.location = 'admin.php'</script>";
     }
 
     public function getDashboard(){
@@ -53,17 +53,64 @@ class Admin extends Database
 //        return $dashboard = ['subs' => $subscribers];
     }
 
-    public function getSubscribers(){}
+    public function getSubscribers(){
+        $subscribers = " SELECT * FROM subscribers ";
+        if($result = $this->connect()->query($subscribers)){
+            while ($row = $result->fetch_assoc()){
+                $subs[] = $row;
+            }
+            return $subs;
+        }else{
+            echo "Subs Err";
+        }
+    }
 
-    public function getSocial(){}
+    public function getSocial(){
+        $socials = " SELECT * FROM social ";
+        if($result = $this->connect()->query($socials)){
+            while ($row = $result->fetch_assoc()){
+                $social[] = $row;
+            }
+            return $social;
+        }else{
+            echo "social Err";
+        }
+    }
+    public function getSocialById($id){
+        $socials = " SELECT * FROM social WHERE id= '$id'";
+        if($result = $this->connect()->query($socials)){
+            $social = $result->fetch_assoc();
+            return $social;
+        }
+    }
     public function editSocial(){}
 
-    public function getServices(){}
+    public function getServices(){
+        $service = " SELECT * FROM services ";
+        if($result = $this->connect()->query($service)){
+            while ($row = $result->fetch_assoc()){
+                $services[] = $row;
+            }
+            return $services;
+        }else{
+            echo "service Err";
+        }
+    }
     public function editServices(){}
     public function addServices(){}
     public function deleteServices(){}
 
-    public function getSlider(){}
+    public function getSlider(){
+        $slider = " SELECT * FROM slider ";
+        if($result = $this->connect()->query($slider)){
+            while ($row = $result->fetch_assoc()){
+                $sliders[] = $row;
+            }
+            return $sliders;
+        }else{
+            echo "slider Err";
+        }
+    }
     public function editSlider(){}
     public function addSlider(){}
     public function deleteSlider(){}

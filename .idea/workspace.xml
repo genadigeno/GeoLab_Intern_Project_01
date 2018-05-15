@@ -2,410 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e6beefa-357c-4dab-80aa-d64c3b4dd570" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/ResizeSensor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/bracket.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/chart.chartist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/chart.chartjs.dark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/chart.chartjs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/chart.echarts.dark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/chart.echarts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/chart.flot.dark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/chart.flot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/chart.morris.dark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/chart.morris.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/chart.peity.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/chart.rickshaw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/chart.sparkline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/dashboard.dark.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/dashboard.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery.vmap.sampledata.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/map.apple.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/map.bluewater.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/map.mapbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/map.shadesofgray.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/map.shiftworker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/popover-colored.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/tooltip-colored.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/widgets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Flot/jquery.flot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Flot/jquery.flot.pie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Flot/jquery.flot.resize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Ionicons/fonts/ionicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Ionicons/fonts/ionicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Jcrop/Jcrop.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap-tagsinput/bootstrap-tagsinput.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bootstrap/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/chart.js/Chart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/chartist/chartist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/comment/comment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/comment/continuecomment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/dialog/dialog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/display/autorefresh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/display/fullscreen.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/display/panel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/display/placeholder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/display/rulers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/edit/closebrackets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/edit/closetag.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/edit/continuelist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/edit/matchbrackets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/edit/matchtags.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/edit/trailingspace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/fold/brace-fold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/fold/comment-fold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/fold/foldcode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/fold/foldgutter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/fold/indent-fold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/fold/markdown-fold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/fold/xml-fold.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/hint/anyword-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/hint/css-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/hint/html-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/hint/javascript-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/hint/show-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/hint/sql-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/hint/xml-hint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/lint/coffeescript-lint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/lint/css-lint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/lint/html-lint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/lint/javascript-lint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/lint/json-lint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/lint/lint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/lint/yaml-lint.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/merge/merge.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/mode/loadmode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/mode/multiplex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/mode/multiplex_test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/mode/overlay.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/mode/simple.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/runmode/colorize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/runmode/runmode-standalone.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/runmode/runmode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/runmode/runmode.node.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/scroll/annotatescrollbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/scroll/scrollpastend.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/scroll/simplescrollbars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/search/jump-to-line.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/search/match-highlighter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/search/matchesonscrollbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/search/search.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/search/searchcursor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/selection/active-line.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/selection/mark-selection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/selection/selection-pointer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/tern/tern.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/tern/worker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/addon/wrap/hardwrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/codemirror.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/apl/apl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/asciiarmor/asciiarmor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/asn.1/asn.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/asterisk/asterisk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/brainfuck/brainfuck.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/clike/clike.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/clojure/clojure.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/cmake/cmake.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/cobol/cobol.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/coffeescript/coffeescript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/commonlisp/commonlisp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/crystal/crystal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/css/css.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/cypher/cypher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/d/d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/dart/dart.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/diff/diff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/django/django.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/dockerfile/dockerfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/dtd/dtd.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/dylan/dylan.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/ebnf/ebnf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/ecl/ecl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/eiffel/eiffel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/elm/elm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/erlang/erlang.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/factor/factor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/fcl/fcl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/forth/forth.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/fortran/fortran.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/gas/gas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/gfm/gfm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/gherkin/gherkin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/go/go.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/groovy/groovy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/haml/haml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/handlebars/handlebars.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/haskell-literate/haskell-literate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/haskell/haskell.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/haxe/haxe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/htmlembedded/htmlembedded.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/htmlmixed/htmlmixed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/http/http.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/idl/idl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/javascript/javascript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/jinja2/jinja2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/jsx/jsx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/julia/julia.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/livescript/livescript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/lua/lua.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/markdown/markdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/mathematica/mathematica.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/mbox/mbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/meta.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/mirc/mirc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/mllike/mllike.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/modelica/modelica.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/mscgen/mscgen.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/mumps/mumps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/nginx/nginx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/nsis/nsis.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/ntriples/ntriples.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/octave/octave.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/oz/oz.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/pascal/pascal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/pegjs/pegjs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/perl/perl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/php/php.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/pig/pig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/powershell/powershell.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/properties/properties.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/protobuf/protobuf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/pug/pug.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/puppet/puppet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/python/python.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/q/q.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/r/r.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/rpm/rpm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/rst/rst.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/ruby/ruby.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/rust/rust.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/sas/sas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/sass/sass.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/scheme/scheme.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/shell/shell.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/sieve/sieve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/slim/slim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/smalltalk/smalltalk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/smarty/smarty.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/solr/solr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/soy/soy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/sparql/sparql.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/spreadsheet/spreadsheet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/sql/sql.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/stex/stex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/stylus/stylus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/swift/swift.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/tcl/tcl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/textile/textile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/tiddlywiki/tiddlywiki.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/tiki/tiki.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/toml/toml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/tornado/tornado.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/troff/troff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/ttcn-cfg/ttcn-cfg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/ttcn/ttcn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/turtle/turtle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/twig/twig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/vb/vb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/vbscript/vbscript.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/velocity/velocity.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/verilog/verilog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/vhdl/vhdl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/vue/vue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/webidl/webidl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/xml/xml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/xquery/xquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/yacas/yacas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/yaml-frontmatter/yaml-frontmatter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/yaml/yaml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/codemirror/mode/z80/z80.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/d3/d3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/datatables-responsive/dataTables.responsive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/datatables/jquery.dataTables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/echarts-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/echarts-en.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/echarts.common-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/echarts.common-en.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/echarts.common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/echarts.common.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/echarts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/echarts.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/echarts.simple-en.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/echarts.simple-en.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/echarts.simple.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/echarts.simple.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/extension/bmap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/extension/bmap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/extension/dataTool.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/echarts/extension/dataTool.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/eve-raphael/eve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/flot-spline/jquery.flot.spline.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/gmaps/gmaps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/highlightjs/highlight.pack.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ion.rangeSlider/js/ion.rangeSlider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/ion.rangeSlider/js/ion.rangeSlider.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jquery-switchbutton/jquery.switchButton.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jquery-toggles/toggles.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jquery-ui/jquery-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jquery.maskedinput/jquery.maskedinput.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jquery.sparkline.bower/jquery.sparkline.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jquery.steps/jquery.steps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jquery/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/jquery.vmap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/jquery.vmap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/continents/jquery.vmap.africa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/continents/jquery.vmap.asia.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/continents/jquery.vmap.australia.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/continents/jquery.vmap.europe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/continents/jquery.vmap.north-america.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/continents/jquery.vmap.south-america.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.algeria.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.argentina.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.brazil.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.canada.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.europe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.france.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.germany.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.greece.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.iran.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.iraq.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.russia.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.tunisia.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.turkey.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.usa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jqvmap/maps/jquery.vmap.world.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/jt.timepicker/jquery.timepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/leaflet/leaflet-src.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/medium-editor/medium-editor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/mocha/mocha.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/moment/moment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/morris.js/morris.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/parsleyjs/parsley.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/peity/jquery.peity.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/perfect-scrollbar/js/perfect-scrollbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/perfect-scrollbar/js/perfect-scrollbar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/popper.js/popper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/raphael/raphael.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/rickshaw/rickshaw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/rickshaw/rickshaw.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/select2/js/select2.full.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/select2/js/select2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/base.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/chart-bar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/chart-box.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/chart-bullet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/chart-discrete.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/chart-line.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/chart-pie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/chart-tristate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/defaults.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/footer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/header.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/interact.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/rangemap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/simpledraw.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/vcanvas-base.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/vcanvas-canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/sparklinejs/src/vcanvas-vml.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/spectrum/spectrum.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/font/summernote.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/font/summernote.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-ar-AR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-ar-AR.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-bg-BG.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-bg-BG.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-ca-ES.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-ca-ES.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-cs-CZ.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-cs-CZ.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-da-DK.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-da-DK.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-de-DE.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-de-DE.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-el-GR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-el-GR.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-es-ES.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-es-ES.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-es-EU.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-es-EU.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-fa-IR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-fa-IR.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-fi-FI.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-fi-FI.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-fr-FR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-fr-FR.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-gl-ES.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-gl-ES.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-he-IL.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-he-IL.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-hr-HR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-hr-HR.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-hu-HU.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-hu-HU.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-id-ID.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-id-ID.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-it-IT.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-it-IT.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-ja-JP.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-ja-JP.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-ko-KR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-ko-KR.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-lt-LT.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-lt-LT.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-lt-LV.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-lt-LV.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-mn-MN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-mn-MN.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-nb-NO.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-nb-NO.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-nl-NL.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-nl-NL.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-pl-PL.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-pl-PL.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-pt-BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-pt-BR.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-pt-PT.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-pt-PT.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-ro-RO.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-ro-RO.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-ru-RU.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-ru-RU.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-sk-SK.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-sk-SK.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-sl-SI.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-sl-SI.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-sr-RS-Latin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-sr-RS-Latin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-sr-RS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-sr-RS.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-sv-SE.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-sv-SE.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-ta-IN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-ta-IN.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-th-TH.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-th-TH.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-tr-TR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-tr-TR.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-uk-UA.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-uk-UA.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-vi-VN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-vi-VN.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-zh-CN.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-zh-TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/lang/summernote-zh-TW.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/summernote-bs4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/summernote-bs4.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/summernote-lite.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/summernote.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/summernote/summernote.min.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/ajax.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/Admin.php" afterPath="$PROJECT_DIR$/classes/Admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/admin.php" afterPath="$PROJECT_DIR$/pages/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/home.php" afterPath="$PROJECT_DIR$/pages/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/services.php" afterPath="$PROJECT_DIR$/pages/services.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/social.php" afterPath="$PROJECT_DIR$/pages/social.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/subs.php" afterPath="$PROJECT_DIR$/pages/subs.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -419,35 +23,57 @@
       <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+            <state relative-caret-position="238">
+              <caret line="83" column="9" lean-forward="true" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
               <folding>
-                <marker date="1526392845179" expanded="true" signature="186:263" ph="SELECT * FRO... admin" />
-                <marker date="1526392845179" expanded="true" signature="863:888" ph="SELECT * FRO... subscribers" />
-                <marker date="1526392845179" expanded="true" signature="914:936" ph="SELECT * FRO... services" />
-                <marker date="1526392845179" expanded="true" signature="960:980" ph="SELECT * FRO... slider" />
+                <element signature="n#signAsAdmin#0;n#Admin#0;n#!!top" expanded="false" />
+                <element signature="n#logout#0;n#Admin#0;n#!!top" expanded="false" />
+                <element signature="n#getDashboard#0;n#Admin#0;n#!!top" expanded="false" />
+                <element signature="n#getSubscribers#0;n#Admin#0;n#!!top" expanded="false" />
+                <element signature="n#getServices#0;n#Admin#0;n#!!top" expanded="false" />
+                <element signature="n#getSlider#0;n#Admin#0;n#!!top" expanded="false" />
+                <marker date="1526412581622" expanded="true" signature="186:263" ph="SELECT * FRO... admin" />
+                <marker date="1526412581622" expanded="true" signature="863:888" ph="SELECT * FRO... subscribers" />
+                <marker date="1526412581622" expanded="true" signature="914:936" ph="SELECT * FRO... services" />
+                <marker date="1526412581622" expanded="true" signature="960:980" ph="SELECT * FRO... slider" />
+                <marker date="1526412581622" expanded="true" signature="1556:1581" ph="SELECT * FRO... subscribers" />
+                <marker date="1526412581622" expanded="true" signature="1884:1904" ph="SELECT * FRO... social" />
+                <marker date="1526412581622" expanded="true" signature="2215:2251" ph="SELECT * FRO... social" />
+                <marker date="1526412581622" expanded="true" signature="2493:2515" ph="SELECT * FRO... services" />
+                <marker date="1526412581622" expanded="true" signature="2936:2956" ph="SELECT * FRO... slider" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Guest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/classes/Guest.php">
+      <file leaf-file-name="ajax.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ajax.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-221">
-              <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+            <state relative-caret-position="170">
+              <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="social.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/social.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="904">
+              <caret line="326" column="28" lean-forward="false" selection-start-line="326" selection-start-column="28" selection-end-line="326" selection-end-column="28" />
               <folding>
-                <marker date="1526391670831" expanded="true" signature="167:187" ph="SELECT * FRO... social" />
-                <marker date="1526391670831" expanded="true" signature="499:513" ph="SELECT * FRO... social" />
-                <marker date="1526391670831" expanded="true" signature="499:521" ph="SELECT * FRO... services" />
-                <marker date="1526391670831" expanded="true" signature="849:869" ph="SELECT * FRO... slider" />
-                <marker date="1526391670831" expanded="true" signature="1466:1486" ph="SELECT * FRO... slider" />
+                <element signature="e#8799#8806#1#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>home</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -457,9 +83,14 @@
       <list>
         <option value="$PROJECT_DIR$/classes/Guest.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/classes/Admin.php" />
         <option value="$PROJECT_DIR$/pages/index.php" />
         <option value="$PROJECT_DIR$/pages/admin.php" />
+        <option value="$PROJECT_DIR$/pages/home.php" />
+        <option value="$PROJECT_DIR$/pages/services.php" />
+        <option value="$PROJECT_DIR$/pages/subs.php" />
+        <option value="$PROJECT_DIR$/classes/Admin.php" />
+        <option value="$PROJECT_DIR$/pages/ajax.php" />
+        <option value="$PROJECT_DIR$/pages/social.php" />
       </list>
     </option>
   </component>
@@ -477,7 +108,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2" />
     <option name="y" value="-17" />
     <option name="width" value="1378" />
@@ -504,6 +135,16 @@
             <path>
               <item name="geolab1" type="b2602c69:ProjectViewProjectNode" />
               <item name="geolab1" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="geolab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geolab1" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="geolab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="geolab1" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -550,15 +191,15 @@
       <updated>1526391056538</updated>
       <workItem from="1526391058397" duration="1065000" />
       <workItem from="1526392712172" duration="2531000" />
-      <workItem from="1526400467710" duration="1990000" />
+      <workItem from="1526400467710" duration="12630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5586000" />
+    <option name="totallyTimeSpent" value="16226000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19894099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -596,10 +237,21 @@
         <state relative-caret-position="816">
           <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
           <folding>
-            <marker date="1526392845179" expanded="true" signature="186:263" ph="SELECT * FRO... admin" />
-            <marker date="1526392845179" expanded="true" signature="863:888" ph="SELECT * FRO... subscribers" />
-            <marker date="1526392845179" expanded="true" signature="914:936" ph="SELECT * FRO... services" />
-            <marker date="1526392845179" expanded="true" signature="960:980" ph="SELECT * FRO... slider" />
+            <element signature="n#signAsAdmin#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#logout#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#getDashboard#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#getSubscribers#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#getServices#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#getSlider#0;n#Admin#0;n#!!top" expanded="false" />
+            <marker date="1526412581622" expanded="true" signature="186:263" ph="SELECT * FRO... admin" />
+            <marker date="1526412581622" expanded="true" signature="863:888" ph="SELECT * FRO... subscribers" />
+            <marker date="1526412581622" expanded="true" signature="914:936" ph="SELECT * FRO... services" />
+            <marker date="1526412581622" expanded="true" signature="960:980" ph="SELECT * FRO... slider" />
+            <marker date="1526412581622" expanded="true" signature="1556:1581" ph="SELECT * FRO... subscribers" />
+            <marker date="1526412581622" expanded="true" signature="1884:1904" ph="SELECT * FRO... social" />
+            <marker date="1526412581622" expanded="true" signature="2215:2251" ph="SELECT * FRO... social" />
+            <marker date="1526412581622" expanded="true" signature="2493:2515" ph="SELECT * FRO... services" />
+            <marker date="1526412581622" expanded="true" signature="2936:2956" ph="SELECT * FRO... slider" />
           </folding>
         </state>
       </provider>
@@ -609,6 +261,8 @@
         <state relative-caret-position="425">
           <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding>
+            <element signature="n#make_slide_indicators#0;n#Guest#0;n#!!top" expanded="false" />
+            <element signature="n#make_slides#0;n#Guest#0;n#!!top" expanded="false" />
             <marker date="1526391670831" expanded="true" signature="167:187" ph="SELECT * FRO... social" />
             <marker date="1526391670831" expanded="true" signature="499:513" ph="SELECT * FRO... social" />
             <marker date="1526391670831" expanded="true" signature="499:521" ph="SELECT * FRO... services" />
@@ -631,10 +285,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1526392845179" expanded="true" signature="186:263" ph="SELECT * FRO... admin" />
-            <marker date="1526392845179" expanded="true" signature="863:888" ph="SELECT * FRO... subscribers" />
-            <marker date="1526392845179" expanded="true" signature="914:936" ph="SELECT * FRO... services" />
-            <marker date="1526392845179" expanded="true" signature="960:980" ph="SELECT * FRO... slider" />
+            <element signature="n#signAsAdmin#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#logout#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#getDashboard#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#getSubscribers#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#getServices#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#getSlider#0;n#Admin#0;n#!!top" expanded="false" />
+            <marker date="1526412581622" expanded="true" signature="186:263" ph="SELECT * FRO... admin" />
+            <marker date="1526412581622" expanded="true" signature="863:888" ph="SELECT * FRO... subscribers" />
+            <marker date="1526412581622" expanded="true" signature="914:936" ph="SELECT * FRO... services" />
+            <marker date="1526412581622" expanded="true" signature="960:980" ph="SELECT * FRO... slider" />
+            <marker date="1526412581622" expanded="true" signature="1556:1581" ph="SELECT * FRO... subscribers" />
+            <marker date="1526412581622" expanded="true" signature="1884:1904" ph="SELECT * FRO... social" />
+            <marker date="1526412581622" expanded="true" signature="2215:2251" ph="SELECT * FRO... social" />
+            <marker date="1526412581622" expanded="true" signature="2493:2515" ph="SELECT * FRO... services" />
+            <marker date="1526412581622" expanded="true" signature="2936:2956" ph="SELECT * FRO... slider" />
           </folding>
         </state>
       </provider>
@@ -644,6 +309,8 @@
         <state relative-caret-position="340">
           <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding>
+            <element signature="n#make_slide_indicators#0;n#Guest#0;n#!!top" expanded="false" />
+            <element signature="n#make_slides#0;n#Guest#0;n#!!top" expanded="false" />
             <marker date="1526391670831" expanded="true" signature="167:187" ph="SELECT * FRO... social" />
             <marker date="1526391670831" expanded="true" signature="499:513" ph="SELECT * FRO... social" />
             <marker date="1526391670831" expanded="true" signature="499:521" ph="SELECT * FRO... services" />
@@ -667,40 +334,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="733" column="32" lean-forward="false" selection-start-line="733" selection-start-column="32" selection-end-line="733" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-663">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <marker date="1526392845179" expanded="true" signature="186:263" ph="SELECT * FRO... admin" />
-            <marker date="1526392845179" expanded="true" signature="863:888" ph="SELECT * FRO... subscribers" />
-            <marker date="1526392845179" expanded="true" signature="914:936" ph="SELECT * FRO... services" />
-            <marker date="1526392845179" expanded="true" signature="960:980" ph="SELECT * FRO... slider" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,14 +352,100 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Guest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        <state relative-caret-position="255">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
+            <element signature="n#make_slide_indicators#0;n#Guest#0;n#!!top" expanded="false" />
+            <element signature="n#make_slides#0;n#Guest#0;n#!!top" expanded="false" />
             <marker date="1526391670831" expanded="true" signature="167:187" ph="SELECT * FRO... social" />
             <marker date="1526391670831" expanded="true" signature="499:513" ph="SELECT * FRO... social" />
             <marker date="1526391670831" expanded="true" signature="499:521" ph="SELECT * FRO... services" />
             <marker date="1526391670831" expanded="true" signature="849:869" ph="SELECT * FRO... slider" />
             <marker date="1526391670831" expanded="true" signature="1466:1486" ph="SELECT * FRO... slider" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="73" column="22" lean-forward="true" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="194" column="48" lean-forward="false" selection-start-line="194" selection-start-column="48" selection-end-line="194" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/subs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="193" column="24" lean-forward="false" selection-start-line="193" selection-start-column="24" selection-end-line="193" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="193" column="42" lean-forward="true" selection-start-line="193" selection-start-column="42" selection-end-line="193" selection-end-column="117" />
+          <folding>
+            <element signature="e#8977#8984#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="83" column="9" lean-forward="true" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+          <folding>
+            <element signature="n#signAsAdmin#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#logout#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#getDashboard#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#getSubscribers#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#getServices#0;n#Admin#0;n#!!top" expanded="false" />
+            <element signature="n#getSlider#0;n#Admin#0;n#!!top" expanded="false" />
+            <marker date="1526412581622" expanded="true" signature="186:263" ph="SELECT * FRO... admin" />
+            <marker date="1526412581622" expanded="true" signature="863:888" ph="SELECT * FRO... subscribers" />
+            <marker date="1526412581622" expanded="true" signature="914:936" ph="SELECT * FRO... services" />
+            <marker date="1526412581622" expanded="true" signature="960:980" ph="SELECT * FRO... slider" />
+            <marker date="1526412581622" expanded="true" signature="1556:1581" ph="SELECT * FRO... subscribers" />
+            <marker date="1526412581622" expanded="true" signature="1884:1904" ph="SELECT * FRO... social" />
+            <marker date="1526412581622" expanded="true" signature="2215:2251" ph="SELECT * FRO... social" />
+            <marker date="1526412581622" expanded="true" signature="2493:2515" ph="SELECT * FRO... services" />
+            <marker date="1526412581622" expanded="true" signature="2936:2956" ph="SELECT * FRO... slider" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/social.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="904">
+          <caret line="326" column="28" lean-forward="false" selection-start-line="326" selection-start-column="28" selection-end-line="326" selection-end-column="28" />
+          <folding>
+            <element signature="e#8799#8806#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

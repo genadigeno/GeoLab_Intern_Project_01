@@ -1,4 +1,21 @@
+<?php session_start(); ?>
 <?php
+spl_autoload_register(function ($className){
+    include "../classes/".$className.".php";
+});
+?>
+
+<?php
+    $admin = new Admin();
+    if (isset($_POST['name'])){
+        $name = $_POST['name'];
+        $password = $_POST['pass'];
+
+        $admin->signAsAdmin($name, $password);
+    }
+    if (isset($_GET['logout'])){
+        $admin->logout();
+    }
 ?>
 
 
@@ -49,8 +66,9 @@
 <body>
 
 <!-- ########## START: LEFT PANEL ########## -->
-<div class="br-logo"><a href=""><span>[</span>bracket <i>plus</i><span>]</span></a></div>
-<div class="br-sideleft overflow-y-auto">
+<div class="br-logo"><a href="../index.php"><span>[</span>Car <i>Service</i><span>]</span></a></div>
+<?php if (isset($_SESSION['name'])) { ?>
+    <div class="br-sideleft overflow-y-auto">
     <label class="sidebar-label pd-x-10 mg-t-20 op-3">Navigation</label>
     <ul class="br-sideleft-menu">
         <li class="br-menu-item">
@@ -62,74 +80,41 @@
 
 
         <li class="br-menu-item">
-            <a href="mailbox.html" class="br-menu-link">
+            <a href="home.php" class="br-menu-link">
                 <i class="menu-item-icon icon ion-ios-home-outline tx-24"></i>
                 <span class="menu-item-label">Home</span>
             </a><!-- br-menu-link -->
         </li><!-- br-menu-item -->
         <li class="br-menu-item">
-            <a href="mailbox.html" class="br-menu-link">
+            <a href="subs.php" class="br-menu-link">
                 <i class="menu-item-icon icon ion-ios-email-outline tx-24"></i>
                 <span class="menu-item-label">Subscribers</span>
             </a><!-- br-menu-link -->
         </li><!-- br-menu-item -->
 
         <li class="br-menu-item">
-            <a href="#" class="br-menu-link">
+            <a href="services.php" class="br-menu-link">
                 <i class="menu-item-icon icon ion-ios-at-outline tx-24"></i>
                 <span class="menu-item-label">Services</span>
             </a>
         </li>
         <li class="br-menu-item">
-            <a href="#" class="br-menu-link">
+            <a href="social.php" class="br-menu-link">
                 <i class="menu-item-icon icon ion-ios-filing-outline tx-24"></i>
                 <span class="menu-item-label">Social Links</span>
             </a><!-- br-menu-link -->
         </li><!-- br-menu-item -->
     </ul><!-- br-sideleft-menu -->
 
-    <label class="sidebar-label pd-x-10 mg-t-25 mg-b-20 tx-info">Information Summary</label>
-
-    <div class="info-list">
-        <div class="info-list-item">
-            <div>
-                <p class="info-list-label">Memory Usage</p>
-                <h5 class="info-list-amount">32.3%</h5>
-            </div>
-            <span class="peity-bar" data-peity='{ "fill": ["#336490"], "height": 35, "width": 60 }'>8,6,5,9,8,4,9,3,5,9</span>
-        </div><!-- info-list-item -->
-
-        <div class="info-list-item">
-            <div>
-                <p class="info-list-label">CPU Usage</p>
-                <h5 class="info-list-amount">140.05</h5>
-            </div>
-            <span class="peity-bar" data-peity='{ "fill": ["#1C7973"], "height": 35, "width": 60 }'>4,3,5,7,12,10,4,5,11,7</span>
-        </div><!-- info-list-item -->
-
-        <div class="info-list-item">
-            <div>
-                <p class="info-list-label">Disk Usage</p>
-                <h5 class="info-list-amount">82.02%</h5>
-            </div>
-            <span class="peity-bar" data-peity='{ "fill": ["#8E4246"], "height": 35, "width": 60 }'>1,2,1,3,2,10,4,12,7</span>
-        </div><!-- info-list-item -->
-
-        <div class="info-list-item">
-            <div>
-                <p class="info-list-label">Daily Traffic</p>
-                <h5 class="info-list-amount">62,201</h5>
-            </div>
-            <span class="peity-bar" data-peity='{ "fill": ["#9C7846"], "height": 35, "width": 60 }'>3,12,7,9,2,3,4,5,2</span>
-        </div><!-- info-list-item -->
-    </div><!-- info-list -->
-
     <br>
 </div><!-- br-sideleft -->
+<?php } else { ?>
+<?php } ?>
 <!-- ########## END: LEFT PANEL ########## -->
 
 <!-- ########## START: HEAD PANEL ########## -->
 <div class="br-header">
+    <?php if (isset($_SESSION['name'])) { ?>
     <div class="br-header-left">
         <div class="navicon-left hidden-md-down"><a id="btnLeftMenu" href=""><i class="icon ion-navicon-round"></i></a></div>
         <div class="navicon-left hidden-lg-up"><a id="btnLeftMenuMobile" href=""><i class="icon ion-navicon-round"></i></a></div>
@@ -141,173 +126,35 @@
         </div><!-- input-group -->
     </div><!-- br-header-left -->
     <div class="br-header-right">
-        <nav class="nav">
-            <div class="dropdown">
-                <a href="" class="nav-link pd-x-7 pos-relative" data-toggle="dropdown">
-                    <i class="icon ion-ios-email-outline tx-24"></i>
-                    <!-- start: if statement -->
-                    <span class="square-8 bg-danger pos-absolute t-15 r-0 rounded-circle"></span>
-                    <!-- end: if statement -->
-                </a>
-                <div class="dropdown-menu dropdown-menu-header">
-                    <div class="dropdown-menu-label">
-                        <label>Messages</label>
-                        <a href="">+ Add New Message</a>
-                    </div><!-- d-flex -->
 
-                    <div class="media-list">
-                        <!-- loop starts here -->
-                        <a href="" class="media-list-link">
-                            <div class="media">
-                                <img src="http://via.placeholder.com/280x280" alt="">
-                                <div class="media-body">
-                                    <div>
-                                        <p>Donna Seay</p>
-                                        <span>2 minutes ago</span>
-                                    </div><!-- d-flex -->
-                                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring.</p>
-                                </div>
-                            </div><!-- media -->
-                        </a>
-                        <!-- loop ends here -->
-                        <a href="" class="media-list-link read">
-                            <div class="media">
-                                <img src="http://via.placeholder.com/280x280" alt="">
-                                <div class="media-body">
-                                    <div>
-                                        <p>Samantha Francis</p>
-                                        <span>3 hours ago</span>
-                                    </div><!-- d-flex -->
-                                    <p>My entire soul, like these sweet mornings of spring.</p>
-                                </div>
-                            </div><!-- media -->
-                        </a>
-                        <a href="" class="media-list-link read">
-                            <div class="media">
-                                <img src="http://via.placeholder.com/280x280" alt="">
-                                <div class="media-body">
-                                    <div>
-                                        <p>Robert Walker</p>
-                                        <span>5 hours ago</span>
-                                    </div><!-- d-flex -->
-                                    <p>I should be incapable of drawing a single stroke at the present moment...</p>
-                                </div>
-                            </div><!-- media -->
-                        </a>
-                        <a href="" class="media-list-link read">
-                            <div class="media">
-                                <img src="http://via.placeholder.com/280x280" alt="">
-                                <div class="media-body">
-                                    <div>
-                                        <p>Larry Smith</p>
-                                        <span>Yesterday</span>
-                                    </div><!-- d-flex -->
-                                    <p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes...</p>
-                                </div>
-                            </div><!-- media -->
-                        </a>
-                        <div class="dropdown-footer">
-                            <a href=""><i class="fa fa-angle-down"></i> Show All Messages</a>
+            <nav class="nav">
+                <div class="dropdown">
+                    <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
+                        <span class="logged-name hidden-md-down"><?=$_SESSION['name']?></span>
+                        <img src="http://via.placeholder.com/500x500" class="wd-32 rounded-circle" alt="">
+                        <span class="square-10 bg-success"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-header wd-250">
+                        <div class="tx-center">
+                            <a href=""><img src="http://via.placeholder.com/500x500" class="wd-80 rounded-circle" alt=""></a>
+                            <h6 class="logged-fullname">Katherine P. Lumaad</h6>
+                            <p>youremail@domain.com</p>
                         </div>
-                    </div><!-- media-list -->
-                </div><!-- dropdown-menu -->
-            </div><!-- dropdown -->
-            <div class="dropdown">
-                <a href="" class="nav-link pd-x-7 pos-relative" data-toggle="dropdown">
-                    <i class="icon ion-ios-bell-outline tx-24"></i>
-                    <!-- start: if statement -->
-                    <span class="square-8 bg-danger pos-absolute t-15 r-5 rounded-circle"></span>
-                    <!-- end: if statement -->
-                </a>
-                <div class="dropdown-menu dropdown-menu-header">
-                    <div class="dropdown-menu-label">
-                        <label>Notifications</label>
-                        <a href="">Mark All as Read</a>
-                    </div><!-- d-flex -->
+                        <hr>
+                        <ul class="list-unstyled user-profile-nav">
+                            <li><a href=""><i class="icon ion-ios-person"></i> Edit Profile</a></li>
+                            <li><a href=""><i class="icon ion-ios-gear"></i> Settings</a></li>
+                            <li><a href=""><i class="icon ion-ios-download"></i> Downloads</a></li>
+                            <li><a href=""><i class="icon ion-ios-star"></i> Favorites</a></li>
+                            <li><a href=""><i class="icon ion-ios-folder"></i> Collections</a></li>
+                            <li><a href="admin.php?logout=yes"><i class="icon ion-power"></i> Sign Out</a></li>
+                        </ul>
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+            </nav>
+        <?php  } else  { ?>
 
-                    <div class="media-list">
-                        <!-- loop starts here -->
-                        <a href="" class="media-list-link read">
-                            <div class="media">
-                                <img src="http://via.placeholder.com/280x280" alt="">
-                                <div class="media-body">
-                                    <p class="noti-text"><strong>Suzzeth Bungaos</strong> tagged you and 18 others in a post.</p>
-                                    <span>October 03, 2017 8:45am</span>
-                                </div>
-                            </div><!-- media -->
-                        </a>
-                        <!-- loop ends here -->
-                        <a href="" class="media-list-link read">
-                            <div class="media">
-                                <img src="http://via.placeholder.com/280x280" alt="">
-                                <div class="media-body">
-                                    <p class="noti-text"><strong>Mellisa Brown</strong> appreciated your work <strong>The Social Network</strong></p>
-                                    <span>October 02, 2017 12:44am</span>
-                                </div>
-                            </div><!-- media -->
-                        </a>
-                        <a href="" class="media-list-link read">
-                            <div class="media">
-                                <img src="http://via.placeholder.com/280x280" alt="">
-                                <div class="media-body">
-                                    <p class="noti-text">20+ new items added are for sale in your <strong>Sale Group</strong></p>
-                                    <span>October 01, 2017 10:20pm</span>
-                                </div>
-                            </div><!-- media -->
-                        </a>
-                        <a href="" class="media-list-link read">
-                            <div class="media">
-                                <img src="http://via.placeholder.com/280x280" alt="">
-                                <div class="media-body">
-                                    <p class="noti-text"><strong>Julius Erving</strong> wants to connect with you on your conversation with <strong>Ronnie Mara</strong></p>
-                                    <span>October 01, 2017 6:08pm</span>
-                                </div>
-                            </div><!-- media -->
-                        </a>
-                        <div class="dropdown-footer">
-                            <a href=""><i class="fa fa-angle-down"></i> Show All Notifications</a>
-                        </div>
-                    </div><!-- media-list -->
-                </div><!-- dropdown-menu -->
-            </div><!-- dropdown -->
-            <div class="dropdown">
-                <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
-                    <span class="logged-name hidden-md-down">Katherine</span>
-                    <img src="http://via.placeholder.com/500x500" class="wd-32 rounded-circle" alt="">
-                    <span class="square-10 bg-success"></span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-header wd-250">
-                    <div class="tx-center">
-                        <a href=""><img src="http://via.placeholder.com/500x500" class="wd-80 rounded-circle" alt=""></a>
-                        <h6 class="logged-fullname">Katherine P. Lumaad</h6>
-                        <p>youremail@domain.com</p>
-                    </div>
-                    <hr>
-                    <div class="tx-center">
-                        <span class="profile-earning-label">Earnings After Taxes</span>
-                        <h3 class="profile-earning-amount">$13,230 <i class="icon ion-ios-arrow-thin-up tx-success"></i></h3>
-                        <span class="profile-earning-text">Based on list price.</span>
-                    </div>
-                    <hr>
-                    <ul class="list-unstyled user-profile-nav">
-                        <li><a href=""><i class="icon ion-ios-person"></i> Edit Profile</a></li>
-                        <li><a href=""><i class="icon ion-ios-gear"></i> Settings</a></li>
-                        <li><a href=""><i class="icon ion-ios-download"></i> Downloads</a></li>
-                        <li><a href=""><i class="icon ion-ios-star"></i> Favorites</a></li>
-                        <li><a href=""><i class="icon ion-ios-folder"></i> Collections</a></li>
-                        <li><a href=""><i class="icon ion-power"></i> Sign Out</a></li>
-                    </ul>
-                </div><!-- dropdown-menu -->
-            </div><!-- dropdown -->
-        </nav>
-        <div class="navicon-right">
-            <a id="btnRightMenu" href="" class="pos-relative">
-                <i class="icon ion-ios-chatboxes-outline"></i>
-                <!-- start: if statement -->
-                <span class="square-8 bg-danger pos-absolute t-10 r--5 rounded-circle"></span>
-                <!-- end: if statement -->
-            </a>
-        </div><!-- navicon-right -->
+        <?php } ?>
     </div><!-- br-header-right -->
 </div><!-- br-header -->
 <!-- ########## END: HEAD PANEL ########## -->
@@ -328,464 +175,114 @@
             <a class="nav-link" data-toggle="tab" role="tab" href="#settings"><i class="icon ion-ios-gear-outline tx-24"></i></a>
         </li>
     </ul><!-- sidebar-tabs -->
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div class="tab-pane pos-absolute a-0 mg-t-60 overflow-y-auto active" id="contacts" role="tabpanel">
-            <label class="sidebar-label pd-x-25 mg-t-25">Online Contacts</label>
-            <div class="contact-list pd-x-10">
-                <a href="" class="contact-list-link new">
-                    <div class="d-flex">
-                        <div class="pos-relative">
-                            <img src="http://via.placeholder.com/280x280" alt="">
-                            <div class="contact-status-indicator bg-success"></div>
-                        </div>
-                        <div class="contact-person">
-                            <p>Marilyn Tarter</p>
-                            <span>Clemson, CA</span>
-                        </div>
-                        <span class="tx-info tx-12"><span class="square-8 bg-info rounded-circle"></span> 1 new</span>
-                    </div><!-- d-flex -->
-                </a><!-- contact-list-link -->
-                <a href="" class="contact-list-link">
-                    <div class="d-flex">
-                        <div class="pos-relative">
-                            <img src="http://via.placeholder.com/280x280" alt="">
-                            <div class="contact-status-indicator bg-success"></div>
-                        </div>
-                        <div class="contact-person">
-                            <p class="mg-b-0 ">Belinda Connor</p>
-                            <span>Fort Kent, ME</span>
-                        </div>
-                    </div><!-- d-flex -->
-                </a><!-- contact-list-link -->
-                <a href="" class="contact-list-link new">
-                    <div class="d-flex">
-                        <div class="pos-relative">
-                            <img src="http://via.placeholder.com/280x280" alt="">
-                            <div class="contact-status-indicator bg-success"></div>
-                        </div>
-                        <div class="contact-person">
-                            <p>Britanny Cevallos</p>
-                            <span>Shiboygan Falls, WI</span>
-                        </div>
-                        <span class="tx-info tx-12"><span class="square-8 bg-info rounded-circle"></span> 3 new</span>
-                    </div><!-- d-flex -->
-                </a><!-- contact-list-link -->
-                <a href="" class="contact-list-link new">
-                    <div class="d-flex">
-                        <div class="pos-relative">
-                            <img src="http://via.placeholder.com/280x280" alt="">
-                            <div class="contact-status-indicator bg-success"></div>
-                        </div>
-                        <div class="contact-person">
-                            <p>Brandon Lawrence</p>
-                            <span>Snohomish, WA</span>
-                        </div>
-                        <span class="tx-info tx-12"><span class="square-8 bg-info rounded-circle"></span> 1 new</span>
-                    </div><!-- d-flex -->
-                </a><!-- contact-list-link -->
-                <a href="" class="contact-list-link">
-                    <div class="d-flex">
-                        <div class="pos-relative">
-                            <img src="http://via.placeholder.com/280x280" alt="">
-                            <div class="contact-status-indicator bg-success"></div>
-                        </div>
-                        <div class="contact-person">
-                            <p>Andrew Wiggins</p>
-                            <span>Springfield, MA</span>
-                        </div>
-                    </div><!-- d-flex -->
-                </a><!-- contact-list-link -->
-                <a href="" class="contact-list-link">
-                    <div class="d-flex">
-                        <div class="pos-relative">
-                            <img src="http://via.placeholder.com/280x280" alt="">
-                            <div class="contact-status-indicator bg-success"></div>
-                        </div>
-                        <div class="contact-person">
-                            <p>Theodore Gristen</p>
-                            <span>Nashville, TN</span>
-                        </div>
-                    </div><!-- d-flex -->
-                </a><!-- contact-list-link -->
-                <a href="" class="contact-list-link">
-                    <div class="d-flex">
-                        <div class="pos-relative">
-                            <img src="http://via.placeholder.com/280x280" alt="">
-                            <div class="contact-status-indicator bg-success"></div>
-                        </div>
-                        <div class="contact-person">
-                            <p>Deborah Miner</p>
-                            <span>North Shore, CA</span>
-                        </div>
-                    </div><!-- d-flex -->
-                </a><!-- contact-list-link -->
-            </div><!-- contact-list -->
-
-
-            <label class="sidebar-label pd-x-25 mg-t-25">Offline Contacts</label>
-            <div class="contact-list pd-x-10">
-                <a href="" class="contact-list-link">
-                    <div class="d-flex">
-                        <div class="pos-relative">
-                            <img src="http://via.placeholder.com/280x280" alt="">
-                            <div class="contact-status-indicator bg-gray-500"></div>
-                        </div>
-                        <div class="contact-person">
-                            <p>Marilyn Tarter</p>
-                            <span>Clemson, CA</span>
-                        </div>
-                    </div><!-- d-flex -->
-                </a><!-- contact-list-link -->
-                <a href="" class="contact-list-link">
-                    <div class="d-flex">
-                        <div class="pos-relative">
-                            <img src="http://via.placeholder.com/280x280" alt="">
-                            <div class="contact-status-indicator bg-gray-500"></div>
-                        </div>
-                        <div class="contact-person">
-                            <p>Belinda Connor</p>
-                            <span>Fort Kent, ME</span>
-                        </div>
-                    </div><!-- d-flex -->
-                </a><!-- contact-list-link -->
-                <a href="" class="contact-list-link">
-                    <div class="d-flex">
-                        <div class="pos-relative">
-                            <img src="http://via.placeholder.com/280x280" alt="">
-                            <div class="contact-status-indicator bg-gray-500"></div>
-                        </div>
-                        <div class="contact-person">
-                            <p>Britanny Cevallos</p>
-                            <span>Shiboygan Falls, WI</span>
-                        </div>
-                    </div><!-- d-flex -->
-                </a><!-- contact-list-link -->
-                <a href="" class="contact-list-link">
-                    <div class="d-flex">
-                        <div class="pos-relative">
-                            <img src="http://via.placeholder.com/280x280" alt="">
-                            <div class="contact-status-indicator bg-gray-500"></div>
-                        </div>
-                        <div class="contact-person">
-                            <p>Brandon Lawrence</p>
-                            <span>Snohomish, WA</span>
-                        </div>
-                    </div><!-- d-flex -->
-                </a><!-- contact-list-link -->
-                <a href="" class="contact-list-link">
-                    <div class="d-flex">
-                        <div class="pos-relative">
-                            <img src="http://via.placeholder.com/280x280" alt="">
-                            <div class="contact-status-indicator bg-gray-500"></div>
-                        </div>
-                        <div class="contact-person">
-                            <p>Andrew Wiggins</p>
-                            <span>Springfield, MA</span>
-                        </div>
-                    </div><!-- d-flex -->
-                </a><!-- contact-list-link -->
-                <a href="" class="contact-list-link">
-                    <div class="d-flex">
-                        <div class="pos-relative">
-                            <img src="http://via.placeholder.com/280x280" alt="">
-                            <div class="contact-status-indicator bg-gray-500"></div>
-                        </div>
-                        <div class="contact-person">
-                            <p>Theodore Gristen</p>
-                            <span>Nashville, TN</span>
-                        </div>
-                    </div><!-- d-flex -->
-                </a><!-- contact-list-link -->
-                <a href="" class="contact-list-link">
-                    <div class="d-flex">
-                        <div class="pos-relative">
-                            <img src="http://via.placeholder.com/280x280" alt="">
-                            <div class="contact-status-indicator bg-gray-500"></div>
-                        </div>
-                        <div class="contact-person">
-                            <p>Deborah Miner</p>
-                            <span>North Shore, CA</span>
-                        </div>
-                    </div><!-- d-flex -->
-                </a><!-- contact-list-link -->
-            </div><!-- contact-list -->
-
-        </div><!-- #contacts -->
-
-
-        <div class="tab-pane pos-absolute a-0 mg-t-60 overflow-y-auto" id="attachments" role="tabpanel">
-            <label class="sidebar-label pd-x-25 mg-t-25">Recent Attachments</label>
-            <div class="media-file-list">
-                <div class="media">
-                    <div class="pd-10 bg-gray-500 bg-mojito wd-50 ht-60 tx-center d-flex align-items-center justify-content-center">
-                        <i class="fa fa-file-image-o tx-28 tx-white"></i>
-                    </div>
-                    <div class="media-body">
-                        <p class="mg-b-0 tx-13">IMG_43445</p>
-                        <p class="mg-b-0 tx-12 op-5">JPG Image</p>
-                        <p class="mg-b-0 tx-12 op-5">1.2mb</p>
-                    </div><!-- media-body -->
-                    <a href="" class="more"><i class="icon ion-android-more-vertical tx-18"></i></a>
-                </div><!-- media -->
-                <div class="media mg-t-20">
-                    <div class="pd-10 bg-gray-500 bg-purple wd-50 ht-60 tx-center d-flex align-items-center justify-content-center">
-                        <i class="fa fa-file-video-o tx-28 tx-white"></i>
-                    </div>
-                    <div class="media-body">
-                        <p class="mg-b-0 tx-13">VID_6543</p>
-                        <p class="mg-b-0 tx-12 op-5">MP4 Video</p>
-                        <p class="mg-b-0 tx-12 op-5">24.8mb</p>
-                    </div><!-- media-body -->
-                    <a href="" class="more"><i class="icon ion-android-more-vertical tx-18"></i></a>
-                </div><!-- media -->
-                <div class="media mg-t-20">
-                    <div class="pd-10 bg-gray-500 bg-reef wd-50 ht-60 tx-center d-flex align-items-center justify-content-center">
-                        <i class="fa fa-file-word-o tx-28 tx-white"></i>
-                    </div>
-                    <div class="media-body">
-                        <p class="mg-b-0 tx-13">Tax_Form</p>
-                        <p class="mg-b-0 tx-12 op-5">Word Document</p>
-                        <p class="mg-b-0 tx-12 op-5">5.5mb</p>
-                    </div><!-- media-body -->
-                    <a href="" class="more"><i class="icon ion-android-more-vertical tx-18"></i></a>
-                </div><!-- media -->
-                <div class="media mg-t-20">
-                    <div class="pd-10 bg-gray-500 bg-firewatch wd-50 ht-60 tx-center d-flex align-items-center justify-content-center">
-                        <i class="fa fa-file-pdf-o tx-28 tx-white"></i>
-                    </div>
-                    <div class="media-body">
-                        <p class="mg-b-0 tx-13">Getting_Started</p>
-                        <p class="mg-b-0 tx-12 op-5">PDF Document</p>
-                        <p class="mg-b-0 tx-12 op-5">12.7mb</p>
-                    </div><!-- media-body -->
-                    <a href="" class="more"><i class="icon ion-android-more-vertical tx-18"></i></a>
-                </div><!-- media -->
-                <div class="media mg-t-20">
-                    <div class="pd-10 bg-gray-500 bg-firewatch wd-50 ht-60 tx-center d-flex align-items-center justify-content-center">
-                        <i class="fa fa-file-pdf-o tx-28 tx-white"></i>
-                    </div>
-                    <div class="media-body">
-                        <p class="mg-b-0 tx-13">Introduction</p>
-                        <p class="mg-b-0 tx-12 op-5">PDF Document</p>
-                        <p class="mg-b-0 tx-12 op-5">7.7mb</p>
-                    </div><!-- media-body -->
-                    <a href="" class="more"><i class="icon ion-android-more-vertical tx-18"></i></a>
-                </div><!-- media -->
-                <div class="media mg-t-20">
-                    <div class="pd-10 bg-gray-500 bg-mojito wd-50 ht-60 tx-center d-flex align-items-center justify-content-center">
-                        <i class="fa fa-file-image-o tx-28 tx-white"></i>
-                    </div>
-                    <div class="media-body">
-                        <p class="mg-b-0 tx-13">IMG_43420</p>
-                        <p class="mg-b-0 tx-12 op-5">JPG Image</p>
-                        <p class="mg-b-0 tx-12 op-5">2.2mb</p>
-                    </div><!-- media-body -->
-                    <a href="" class="more"><i class="icon ion-android-more-vertical tx-18"></i></a>
-                </div><!-- media -->
-                <div class="media mg-t-20">
-                    <div class="pd-10 bg-gray-500 bg-mojito wd-50 ht-60 tx-center d-flex align-items-center justify-content-center">
-                        <i class="fa fa-file-image-o tx-28 tx-white"></i>
-                    </div>
-                    <div class="media-body">
-                        <p class="mg-b-0 tx-13">IMG_43447</p>
-                        <p class="mg-b-0 tx-12 op-5">JPG Image</p>
-                        <p class="mg-b-0 tx-12 op-5">3.2mb</p>
-                    </div><!-- media-body -->
-                    <a href="" class="more"><i class="icon ion-android-more-vertical tx-18"></i></a>
-                </div><!-- media -->
-                <div class="media mg-t-20">
-                    <div class="pd-10 bg-gray-500 bg-purple wd-50 ht-60 tx-center d-flex align-items-center justify-content-center">
-                        <i class="fa fa-file-video-o tx-28 tx-white"></i>
-                    </div>
-                    <div class="media-body">
-                        <p class="mg-b-0 tx-13">VID_6545</p>
-                        <p class="mg-b-0 tx-12 op-5">AVI Video</p>
-                        <p class="mg-b-0 tx-12 op-5">14.8mb</p>
-                    </div><!-- media-body -->
-                    <a href="" class="more"><i class="icon ion-android-more-vertical tx-18"></i></a>
-                </div><!-- media -->
-                <div class="media mg-t-20">
-                    <div class="pd-10 bg-gray-500 bg-reef wd-50 ht-60 tx-center d-flex align-items-center justify-content-center">
-                        <i class="fa fa-file-word-o tx-28 tx-white"></i>
-                    </div>
-                    <div class="media-body">
-                        <p class="mg-b-0 tx-13">Secret_Document</p>
-                        <p class="mg-b-0 tx-12 op-5">Word Document</p>
-                        <p class="mg-b-0 tx-12 op-5">4.5mb</p>
-                    </div><!-- media-body -->
-                    <a href="" class="more"><i class="icon ion-android-more-vertical tx-18"></i></a>
-                </div><!-- media -->
-            </div><!-- media-list -->
-        </div><!-- #history -->
-        <div class="tab-pane pos-absolute a-0 mg-t-60 overflow-y-auto" id="calendar" role="tabpanel">
-            <label class="sidebar-label pd-x-25 mg-t-25">Time &amp; Date</label>
-            <div class="pd-x-25">
-                <h2 id="brTime" class="br-time"></h2>
-                <h6 id="brDate" class="br-date"></h6>
-            </div>
-
-            <label class="sidebar-label pd-x-25 mg-t-25">Events Calendar</label>
-            <div class="datepicker sidebar-datepicker"></div>
-
-
-            <label class="sidebar-label pd-x-25 mg-t-25">Event Today</label>
-            <div class="pd-x-25">
-                <div class="list-group sidebar-event-list mg-b-20">
-                    <div class="list-group-item">
-                        <div>
-                            <h6>Roven's 32th Birthday</h6>
-                            <p>2:30PM</p>
-                        </div>
-                        <a href="" class="more"><i class="icon ion-android-more-vertical tx-18"></i></a>
-                    </div><!-- list-group-item -->
-                    <div class="list-group-item">
-                        <div>
-                            <h6>Regular Workout Schedule</h6>
-                            <p>7:30PM</p>
-                        </div>
-                        <a href="" class="more"><i class="icon ion-android-more-vertical tx-18"></i></a>
-                    </div><!-- list-group-item -->
-                </div><!-- list-group -->
-
-                <a href="" class="btn btn-block btn-outline-secondary tx-uppercase tx-12 tx-spacing-2">+ Add Event</a>
-                <br>
-            </div>
-
-        </div>
-        <div class="tab-pane pos-absolute a-0 mg-t-60 overflow-y-auto" id="settings" role="tabpanel">
-            <label class="sidebar-label pd-x-25 mg-t-25">Quick Settings</label>
-
-            <div class="sidebar-settings-item">
-                <h6 class="tx-13 tx-normal">Sound Notification</h6>
-                <p class="op-5 tx-13">Play an alert sound everytime there is a new notification.</p>
-                <div class="pos-relative">
-                    <input type="checkbox" name="checkbox" class="switch-button" checked>
-                </div>
-            </div>
-
-            <div class="sidebar-settings-item">
-                <h6 class="tx-13 tx-normal">2 Steps Verification</h6>
-                <p class="op-5 tx-13">Sign in using a two step verification by sending a verification code to your phone.</p>
-                <div class="pos-relative">
-                    <input type="checkbox" name="checkbox2" class="switch-button">
-                </div>
-            </div>
-
-            <div class="sidebar-settings-item">
-                <h6 class="tx-13 tx-normal">Location Services</h6>
-                <p class="op-5 tx-13">Allowing us to access your location</p>
-                <div class="pos-relative">
-                    <input type="checkbox" name="checkbox3" class="switch-button">
-                </div>
-            </div>
-
-            <div class="sidebar-settings-item">
-                <h6 class="tx-13 tx-normal">Newsletter Subscription</h6>
-                <p class="op-5 tx-13">Enables you to send us news and updates send straight to your email.</p>
-                <div class="pos-relative">
-                    <input type="checkbox" name="checkbox4" class="switch-button" checked>
-                </div>
-            </div>
-
-            <div class="sidebar-settings-item">
-                <h6 class="tx-13 tx-normal">Your email</h6>
-                <div class="pos-relative">
-                    <input type="email" name="email" class="form-control" value="janedoe@domain.com">
-                </div>
-            </div>
-
-            <div class="pd-y-20 pd-x-25">
-                <h6 class="tx-13 tx-normal tx-white mg-b-20">More Settings</h6>
-                <a href="" class="btn btn-block btn-outline-secondary tx-uppercase tx-11 tx-spacing-2">Account Settings</a>
-                <a href="" class="btn btn-block btn-outline-secondary tx-uppercase tx-11 tx-spacing-2">Privacy Settings</a>
-            </div>
-
-        </div>
-    </div><!-- tab-content -->
 </div><!-- br-sideright -->
 <!-- ########## END: RIGHT PANEL ########## --->
 
 <!-- ########## START: MAIN PANEL ########## -->
-<div class="br-mainpanel">
-    <div class="br-pagetitle">
-        <i class="icon ion-ios-home-outline"></i>
-        <div>
-            <h4>Dashboard</h4>
-            <p class="mg-b-0">Do bigger things with Bracket plus, the responsive bootstrap 4 admin template.</p>
-        </div>
-    </div><!-- d-flex -->
+<?php if (isset($_SESSION['name'])) { ?>
+    <div class="br-mainpanel">
+        <div class="br-pagetitle">
+            <i class="icon ion-ios-home-outline"></i>
+            <div>
+                <h4>Dashboard</h4>
+                <p class="mg-b-0">Do bigger things with Bracket plus, the responsive bootstrap 4 admin template.</p>
+            </div>
+        </div><!-- d-flex -->
 
-    <div class="br-pagebody">
-        <div class="row row-sm">
-            <div class="col-sm-6 col-xl-3">
-                <div class="bg-info rounded overflow-hidden">
-                    <div class="pd-x-20 pd-t-20 d-flex align-items-center">
-                        <i class="ion ion-earth tx-60 lh-0 tx-white op-7"></i>
-                        <div class="mg-l-20">
-                            <p class="tx-10 tx-spacing-1 tx-mont tx-semibold tx-uppercase tx-white-8 mg-b-10">Today's Visits</p>
-                            <p class="tx-24 tx-white tx-lato tx-bold mg-b-0 lh-1">1,975,224</p>
-                            <span class="tx-11 tx-roboto tx-white-8">24% higher yesterday</span>
+        <div class="br-pagebody">
+            <div class="row row-sm">
+                <div class="col-sm-6 col-xl-3">
+                    <div class="bg-info rounded overflow-hidden">
+                        <div class="pd-x-20 pd-t-20 d-flex align-items-center">
+                            <i class="ion ion-earth tx-60 lh-0 tx-white op-7"></i>
+                            <div class="mg-l-20">
+                                <p class="tx-10 tx-spacing-1 tx-mont tx-semibold tx-uppercase tx-white-8 mg-b-10">Subscribers</p>
+                                <p class="tx-24 tx-white tx-lato tx-bold mg-b-0 lh-1"><?=$admin->getDashboard()['subs'] ?></p>
+                                <span class="tx-11 tx-roboto tx-white-8"> </span>
+                            </div>
                         </div>
+                        <div id="ch1" class="ht-50 tr-y-1"></div>
                     </div>
-                    <div id="ch1" class="ht-50 tr-y-1"></div>
-                </div>
-            </div><!-- col-3 -->
-            <div class="col-sm-6 col-xl-3 mg-t-20 mg-sm-t-0">
-                <div class="bg-purple rounded overflow-hidden">
-                    <div class="pd-x-20 pd-t-20 d-flex align-items-center">
-                        <i class="ion ion-bag tx-60 lh-0 tx-white op-7"></i>
-                        <div class="mg-l-20">
-                            <p class="tx-10 tx-spacing-1 tx-mont tx-semibold tx-uppercase tx-white-8 mg-b-10">Today Sales</p>
-                            <p class="tx-24 tx-white tx-lato tx-bold mg-b-0 lh-1">$329,291</p>
-                            <span class="tx-11 tx-roboto tx-white-8">$390,212 before tax</span>
+                </div><!-- col-3 -->
+                <div class="col-sm-6 col-xl-3 mg-t-20 mg-sm-t-0">
+                    <div class="bg-purple rounded overflow-hidden">
+                        <div class="pd-x-20 pd-t-20 d-flex align-items-center">
+                            <i class="ion ion-bag tx-60 lh-0 tx-white op-7"></i>
+                            <div class="mg-l-20">
+                                <p class="tx-10 tx-spacing-1 tx-mont tx-semibold tx-uppercase tx-white-8 mg-b-10">Services</p>
+                                <p class="tx-24 tx-white tx-lato tx-bold mg-b-0 lh-1"><?=$admin->getDashboard()['services'] ?></p>
+                                <span class="tx-11 tx-roboto tx-white-8"> </span>
+                            </div>
                         </div>
+                        <div id="ch3" class="ht-50 tr-y-1"></div>
                     </div>
-                    <div id="ch3" class="ht-50 tr-y-1"></div>
-                </div>
-            </div><!-- col-3 -->
-            <div class="col-sm-6 col-xl-3 mg-t-20 mg-xl-t-0">
-                <div class="bg-teal rounded overflow-hidden">
-                    <div class="pd-x-20 pd-t-20 d-flex align-items-center">
-                        <i class="ion ion-monitor tx-60 lh-0 tx-white op-7"></i>
-                        <div class="mg-l-20">
-                            <p class="tx-10 tx-spacing-1 tx-mont tx-semibold tx-uppercase tx-white-8 mg-b-10">% Unique Visits</p>
-                            <p class="tx-24 tx-white tx-lato tx-bold mg-b-0 lh-1">54.45%</p>
-                            <span class="tx-11 tx-roboto tx-white-8">23% average duration</span>
+                </div><!-- col-3 -->
+                <div class="col-sm-6 col-xl-3 mg-t-20 mg-xl-t-0">
+                    <div class="bg-teal rounded overflow-hidden">
+                        <div class="pd-x-20 pd-t-20 d-flex align-items-center">
+                            <i class="ion ion-monitor tx-60 lh-0 tx-white op-7"></i>
+                            <div class="mg-l-20">
+                                <p class="tx-10 tx-spacing-1 tx-mont tx-semibold tx-uppercase tx-white-8 mg-b-10">Slider Images Quantity</p>
+                                <p class="tx-24 tx-white tx-lato tx-bold mg-b-0 lh-1"><?=$admin->getDashboard()['slider'] ?></p>
+                                <span class="tx-11 tx-roboto tx-white-8"> </span>
+                            </div>
                         </div>
+                        <div id="ch2" class="ht-50 tr-y-1"></div>
                     </div>
-                    <div id="ch2" class="ht-50 tr-y-1"></div>
-                </div>
-            </div><!-- col-3 -->
-            <div class="col-sm-6 col-xl-3 mg-t-20 mg-xl-t-0">
-                <div class="bg-primary rounded overflow-hidden">
-                    <div class="pd-x-20 pd-t-20 d-flex align-items-center">
-                        <i class="ion ion-clock tx-60 lh-0 tx-white op-7"></i>
-                        <div class="mg-l-20">
-                            <p class="tx-10 tx-spacing-1 tx-mont tx-semibold tx-uppercase tx-white-8 mg-b-10">Bounce Rate</p>
-                            <p class="tx-24 tx-white tx-lato tx-bold mg-b-0 lh-1">32.16%</p>
-                            <span class="tx-11 tx-roboto tx-white-8">65.45% on average time</span>
+                </div><!-- col-3 -->
+                <div class="col-sm-6 col-xl-3 mg-t-20 mg-xl-t-0">
+                    <div class="bg-primary rounded overflow-hidden">
+                        <div class="pd-x-20 pd-t-20 d-flex align-items-center">
+                            <i class="ion ion-clock tx-60 lh-0 tx-white op-7"></i>
+                            <div class="mg-l-20">
+                                <p class="tx-10 tx-spacing-1 tx-mont tx-semibold tx-uppercase tx-white-8 mg-b-10"> </p>
+                                <p class="tx-24 tx-white tx-lato tx-bold mg-b-0 lh-1"> </p>
+                                <span class="tx-11 tx-roboto tx-white-8"> </span>
+                            </div>
                         </div>
+                        <div id="ch4" class="ht-50 tr-y-1"></div>
                     </div>
-                    <div id="ch4" class="ht-50 tr-y-1"></div>
-                </div>
-            </div><!-- col-3 -->
-        </div><!-- row -->
+                </div><!-- col-3 -->
+            </div><!-- row -->
 
-    </div><!-- br-pagebody -->
-    <footer class="br-footer">
-        <div class="footer-left">
-            <div class="mg-b-2">Copyright &copy; 2017. Bracket Plus. All Rights Reserved.</div>
-            <div>Attentively and carefully made by ThemePixels.</div>
-        </div>
-        <div class="footer-right d-flex align-items-center">
-            <span class="tx-uppercase mg-r-10">Share:</span>
-            <a target="_blank" class="pd-x-5" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//themepixels.me/bracketplus/intro"><i class="fa fa-facebook tx-20"></i></a>
-            <a target="_blank" class="pd-x-5" href="https://twitter.com/home?status=Bracket%20Plus,%20your%20best%20choice%20for%20premium%20quality%20admin%20template%20from%20Bootstrap.%20Get%20it%20now%20at%20http%3A//themepixels.me/bracketplus/intro"><i class="fa fa-twitter tx-20"></i></a>
-        </div>
-    </footer>
-</div><!-- br-mainpanel -->
+        </div><!-- br-pagebody -->
+        <footer class="br-footer" style="margin-top: 30%;">
+            <div class="footer-left">
+                <div class="mg-b-2">Copyright &copy; 2018.  All Rights Reserved.</div>
+                <div>Attentively and carefully made by ThemePixels.</div>
+            </div>
+            <div class="footer-right d-flex align-items-center">
+                <span class="tx-uppercase mg-r-10">Share:</span>
+                <a target="_blank" class="pd-x-5" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//themepixels.me/bracketplus/intro"><i class="fa fa-facebook tx-20"></i></a>
+                <a target="_blank" class="pd-x-5" href="https://twitter.com/home?status=Bracket%20Plus,%20your%20best%20choice%20for%20premium%20quality%20admin%20template%20from%20Bootstrap.%20Get%20it%20now%20at%20http%3A//themepixels.me/bracketplus/intro"><i class="fa fa-twitter tx-20"></i></a>
+            </div>
+        </footer>
+    </div>
+<?php } else { ?>
+    <div style="margin-top: 100px">
+        <form class="form-horizontal" action="admin.php" method="post">
+            <div style="display: table; width: 50%; margin: 0 auto;">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="name" class="form-control" id="inputEmail3" placeholder="Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" name="pass" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" name="enter" class="btn btn-default">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+<?php } ?>
 <!-- ########## END: MAIN PANEL ########## -->
 
 <script src="../lib/jquery/jquery.js"></script>

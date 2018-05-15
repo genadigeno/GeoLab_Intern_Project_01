@@ -1,0 +1,813 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Andika");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+/* line 9, main.scss */
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* line 17, main.scss */
+header {
+  position: relative;
+  height: 100vh; }
+
+/* line 21, main.scss */
+.main-container {
+  position: relative; }
+  /* line 23, main.scss */
+  .main-container .logo-nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    /* line 25, main.scss */
+    .main-container .logo-nav-container nav {
+      position: fixed;
+      z-index: 2;
+      width: 100%;
+      height: 0vh;
+      background: rgba(255, 255, 255, 0.82);
+      right: 0;
+      -webkit-transition: .3s ease-out;
+      transition: .3s ease-out;
+      overflow: hidden;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      /* line 35, main.scss */
+      .main-container .logo-nav-container nav .nav-container {
+        width: 100%; }
+        /* line 37, main.scss */
+        .main-container .logo-nav-container nav .nav-container ul {
+          margin-left: 15%; }
+          @media only screen and (max-width: 767px) {
+            /* line 37, main.scss */
+            .main-container .logo-nav-container nav .nav-container ul {
+              margin: 0;
+              padding: 0;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center; } }
+          /* line 47, main.scss */
+          .main-container .logo-nav-container nav .nav-container ul li {
+            list-style: none;
+            margin: 10px 0; }
+            /* line 50, main.scss */
+            .main-container .logo-nav-container nav .nav-container ul li a {
+              text-decoration: none;
+              padding: 15px;
+              margin: 5px 0px;
+              font-size: 45px;
+              color: black; }
+              @media only screen and (max-width: 767px) {
+                /* line 50, main.scss */
+                .main-container .logo-nav-container nav .nav-container ul li a {
+                  font-size: 30px; } }
+    /* line 64, main.scss */
+    .main-container .logo-nav-container .logotype {
+      z-index: 3; }
+      /* line 66, main.scss */
+      .main-container .logo-nav-container .logotype h1 {
+        margin: 20px;
+        font-size: 7.5em;
+        -webkit-transition: .2s;
+        transition: .2s;
+        letter-spacing: 9px;
+        color: #ffffff;
+        position: relative;
+        font-family: 'Anton', sans-serif; }
+        @media only screen and (max-width: 992px) {
+          /* line 66, main.scss */
+          .main-container .logo-nav-container .logotype h1 {
+            font-size: 5.5em; } }
+        @media only screen and (max-width: 767px) {
+          /* line 66, main.scss */
+          .main-container .logo-nav-container .logotype h1 {
+            font-size: 4.5em;
+            margin: 5px; } }
+        /* line 81, main.scss */
+        .main-container .logo-nav-container .logotype h1 span {
+          position: absolute;
+          top: 0;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background: #ffffff;
+          -webkit-transform: translate(15px, -3px);
+                  transform: translate(15px, -3px);
+          -webkit-transition: .2s;
+          transition: .2s; }
+          @media only screen and (max-width: 992px) {
+            /* line 81, main.scss */
+            .main-container .logo-nav-container .logotype h1 span {
+              width: 15px;
+              height: 15px;
+              -webkit-transform: translate(10.5px, -3px);
+                      transform: translate(10.5px, -3px); } }
+          @media only screen and (max-width: 767px) {
+            /* line 81, main.scss */
+            .main-container .logo-nav-container .logotype h1 span {
+              width: 13px;
+              height: 13px;
+              -webkit-transform: translate(8px, -3px);
+                      transform: translate(8px, -3px); } }
+    /* line 105, main.scss */
+    .main-container .logo-nav-container .nav-menu .nav-menu-btn {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 30px;
+      margin: 1em 1.5em;
+      z-index: 999; }
+      @media only screen and (max-width: 767px) {
+        /* line 105, main.scss */
+        .main-container .logo-nav-container .nav-menu .nav-menu-btn {
+          margin: 0.8em .8em; } }
+      /* line 116, main.scss */
+      .main-container .logo-nav-container .nav-menu .nav-menu-btn span {
+        position: absolute;
+        width: 39px;
+        right: 0;
+        height: 4px;
+        border-radius: 7px;
+        -webkit-transition: .2s ease-in;
+        transition: .2s ease-in; }
+      /* line 125, main.scss */
+      .main-container .logo-nav-container .nav-menu .nav-menu-btn span:nth-child(2) {
+        margin-top: 11px;
+        width: 34px; }
+      /* line 129, main.scss */
+      .main-container .logo-nav-container .nav-menu .nav-menu-btn span:nth-child(3) {
+        margin-top: 21px; }
+  /* line 135, main.scss */
+  .main-container .main-slider {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background: #b16d6d;
+    z-index: -1; }
+    /* line 142, main.scss */
+    .main-container .main-slider .slider-container {
+      position: relative;
+      height: 100vh; }
+      /* line 145, main.scss */
+      .main-container .main-slider .slider-container span {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 0;
+        left: 0;
+        z-index: 1; }
+      /* line 153, main.scss */
+      .main-container .main-slider .slider-container span:nth-child(1) {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        top: 69%;
+        left: 50%;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        background: rgba(255, 255, 255, 0.329); }
+      /* line 162, main.scss */
+      .main-container .main-slider .slider-container span:nth-child(2) {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        top: 40%;
+        left: 20%;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        background: rgba(255, 255, 255, 0.52); }
+      /* line 171, main.scss */
+      .main-container .main-slider .slider-container span:nth-child(3) {
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        top: 30%;
+        left: 10%; }
+      /* line 178, main.scss */
+      .main-container .main-slider .slider-container span:nth-child(4) {
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        top: 70%;
+        left: 3%; }
+      /* line 185, main.scss */
+      .main-container .main-slider .slider-container span:nth-child(5) {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        top: 7%;
+        left: 42%;
+        background-color: rgba(255, 255, 255, 0.65); }
+      /* line 193, main.scss */
+      .main-container .main-slider .slider-container span:nth-child(6) {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        top: 5%;
+        left: 80%;
+        background: rgba(255, 0, 0, 0.6509803922); }
+      /* line 201, main.scss */
+      .main-container .main-slider .slider-container span:nth-child(7) {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        top: 15%;
+        left: 65%;
+        background: rgba(255, 255, 255, 0.89); }
+      /* line 209, main.scss */
+      .main-container .main-slider .slider-container span:nth-child(8) {
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        top: 36%;
+        left: 46%; }
+      /* line 216, main.scss */
+      .main-container .main-slider .slider-container span:nth-child(9) {
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        top: 50%;
+        left: 65%;
+        background: rgba(255, 255, 255, 0.22); }
+      /* line 224, main.scss */
+      .main-container .main-slider .slider-container span:nth-child(10) {
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        top: 43%;
+        left: 80%;
+        background: rgba(255, 0, 0, 0.82); }
+
+/* line 236, main.scss */
+.colorwhite {
+  background: #ffffff; }
+
+/* line 239, main.scss */
+.coloronscroll {
+  background: #bfbfbf; }
+
+/* line 242, main.scss */
+.line1Active {
+  -webkit-transform: translateY(11px) rotate(45deg) !important;
+          transform: translateY(11px) rotate(45deg) !important;
+  background: red !important; }
+
+/* line 246, main.scss */
+.line2Active {
+  opacity: 0;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px); }
+
+/* line 250, main.scss */
+.line3Active {
+  -webkit-transform: translateY(-10px) rotate(-45deg) !important;
+          transform: translateY(-10px) rotate(-45deg) !important;
+  background: red !important; }
+
+/* line 254, main.scss */
+.show {
+  height: 100vh !important; }
+
+/* line 257, main.scss */
+.logotypeActive {
+  color: red !important; }
+
+/* line 260, main.scss */
+.logotypeCircleActive {
+  background: red !important; }
+
+/* line 267, main.scss */
+#sec1 {
+  padding-top: 3em; }
+  /* line 269, main.scss */
+  #sec1 .main-container {
+    margin: 0 auto;
+    width: 990px; }
+    @media only screen and (max-width: 1024px) {
+      /* line 269, main.scss */
+      #sec1 .main-container {
+        width: 100%; } }
+    /* line 275, main.scss */
+    #sec1 .main-container h1 {
+      text-transform: uppercase;
+      text-align: center;
+      font-family: 'Andika', sans-serif;
+      letter-spacing: 9px;
+      font-size: 30px;
+      width: 100%; }
+      @media only screen and (max-width: 1024px) {
+        /* line 275, main.scss */
+        #sec1 .main-container h1 {
+          width: 90%;
+          margin: 0 auto; } }
+      @media only screen and (max-width: 577px) {
+        /* line 275, main.scss */
+        #sec1 .main-container h1 {
+          font-size: 26px; } }
+    /* line 290, main.scss */
+    #sec1 .main-container .row {
+      margin-top: 3em;
+      margin-right: 0px;
+      margin-left: 0px; }
+      /* line 294, main.scss */
+      #sec1 .main-container .row .main-icon-block {
+        margin: 0 auto;
+        width: 97%;
+        height: 90%;
+        background: #ebe8de; }
+        @media only screen and (max-width: 767px) {
+          /* line 294, main.scss */
+          #sec1 .main-container .row .main-icon-block {
+            width: 80%; } }
+        @media only screen and (max-width: 577px) {
+          /* line 294, main.scss */
+          #sec1 .main-container .row .main-icon-block {
+            width: 90%; } }
+        /* line 305, main.scss */
+        #sec1 .main-container .row .main-icon-block .main-icon {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          padding-bottom: 4em; }
+          /* line 312, main.scss */
+          #sec1 .main-container .row .main-icon-block .main-icon img {
+            margin-top: 3em; }
+          /* line 315, main.scss */
+          #sec1 .main-container .row .main-icon-block .main-icon h4 {
+            font-size: 30px;
+            margin-top: 1em;
+            font-family: 'Andika', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 9px; }
+            @media only screen and (max-width: 577px) {
+              /* line 315, main.scss */
+              #sec1 .main-container .row .main-icon-block .main-icon h4 {
+                font-size: 25px; } }
+  /* line 329, main.scss */
+  #sec1 .car-img {
+    width: 100%;
+    overflow: hidden; }
+    /* line 332, main.scss */
+    #sec1 .car-img img {
+      width: 100%; }
+      @media only screen and (max-width: 769px) {
+        /* line 332, main.scss */
+        #sec1 .car-img img {
+          width: clac(150%); } }
+
+/* line 344, main.scss */
+#sec2 {
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  @media only screen and (max-width: 769px) {
+    /* line 350, main.scss */
+    #sec2 .container {
+      min-width: 100%; } }
+  /* line 354, main.scss */
+  #sec2 .container .main-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 357, main.scss */
+    #sec2 .container .main-container .main-map {
+      width: 100%; }
+    /* line 360, main.scss */
+    #sec2 .container .main-container .main-contact {
+      width: 82%;
+      background: #ebe8de;
+      margin-top: -20em;
+      z-index: 1; }
+      @media only screen and (max-width: 991px) {
+        /* line 360, main.scss */
+        #sec2 .container .main-container .main-contact {
+          background: #ffffff;
+          margin-top: -10em; } }
+      @media only screen and (max-width: 991px) {
+        /* line 370, main.scss */
+        #sec2 .container .main-container .main-contact .row .col-order {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; }
+          /* line 373, main.scss */
+          #sec2 .container .main-container .main-contact .row .col-order .main-social-block {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            width: 100%;
+            margin-top: 1.5em; }
+            /* line 378, main.scss */
+            #sec2 .container .main-container .main-contact .row .col-order .main-social-block h1 {
+              display: none; }
+            /* line 381, main.scss */
+            #sec2 .container .main-container .main-contact .row .col-order .main-social-block h2 {
+              width: auto;
+              margin: 0.3em -0.9em; } }
+      @media only screen and (max-width: 991px) and (max-width: 769px) {
+        /* line 381, main.scss */
+        #sec2 .container .main-container .main-contact .row .col-order .main-social-block h2 {
+          font-size: 30px;
+          margin: 0.5em -0.9em; } }
+      @media only screen and (max-width: 991px) {
+            /* line 389, main.scss */
+            #sec2 .container .main-container .main-contact .row .col-order .main-social-block .main-social-icon {
+              width: 139px;
+              margin: 0;
+              margin: 0.9em -1.5em; } }
+      /* line 398, main.scss */
+      #sec2 .container .main-container .main-contact .row .main-social-block h1 {
+        margin: 0.5em;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 36px; }
+        @media only screen and (max-width: 1199px) {
+          /* line 398, main.scss */
+          #sec2 .container .main-container .main-contact .row .main-social-block h1 {
+            font-size: 30px; } }
+      /* line 407, main.scss */
+      #sec2 .container .main-container .main-contact .row .main-social-block h2 {
+        margin: 0 auto;
+        width: 60%;
+        margin-top: 4.5em;
+        text-align: center;
+        font-size: 2.1em;
+        font-weight: 400; }
+      /* line 415, main.scss */
+      #sec2 .container .main-container .main-contact .row .main-social-block .main-social-icon {
+        width: 55%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin: 10px auto; }
+        /* line 419, main.scss */
+        #sec2 .container .main-container .main-contact .row .main-social-block .main-social-icon .ficons {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          border: 1px solid black;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          font-size: 18px;
+          cursor: pointer; }
+      /* line 430, main.scss */
+      #sec2 .container .main-container .main-contact .row .col-color {
+        background: #ffffff; }
+        @media only screen and (max-width: 991px) {
+          /* line 430, main.scss */
+          #sec2 .container .main-container .main-contact .row .col-color {
+            background: #ebe8de; } }
+      /* line 436, main.scss */
+      #sec2 .container .main-container .main-contact .row .main-form {
+        width: 100%; }
+        @media only screen and (max-width: 993px) {
+          /* line 436, main.scss */
+          #sec2 .container .main-container .main-contact .row .main-form {
+            padding-bottom: 1em; } }
+        /* line 441, main.scss */
+        #sec2 .container .main-container .main-contact .row .main-form h1 {
+          margin: 0.5em;
+          text-transform: uppercase;
+          font-weight: 400;
+          letter-spacing: 5px; }
+        /* line 447, main.scss */
+        #sec2 .container .main-container .main-contact .row .main-form form {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          position: relative; }
+          @media only screen and (max-width: 769px) {
+            /* line 447, main.scss */
+            #sec2 .container .main-container .main-contact .row .main-form form {
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column;
+              padding-bottom: 4em; } }
+          /* line 454, main.scss */
+          #sec2 .container .main-container .main-contact .row .main-form form .main-input {
+            padding-bottom: 3em; }
+            @media only screen and (max-width: 769px) {
+              /* line 454, main.scss */
+              #sec2 .container .main-container .main-contact .row .main-form form .main-input {
+                width: 90%;
+                margin: 0 auto;
+                padding-bottom: 10px;
+                position: relative; } }
+            /* line 462, main.scss */
+            #sec2 .container .main-container .main-contact .row .main-form form .main-input label {
+              color: red;
+              position: absolute;
+              left: 25px;
+              margin-top: 30px;
+              font-size: 13px; }
+            @media only screen and (max-width: 769px) {
+              /* line 471, main.scss */
+              #sec2 .container .main-container .main-contact .row .main-form form .main-input label {
+                left: 0px; } }
+            /* line 475, main.scss */
+            #sec2 .container .main-container .main-contact .row .main-form form .main-input input {
+              width: 205px;
+              height: 30px;
+              margin: 0.1em 1.5em;
+              border: none;
+              outline: none;
+              background: #f2f2f2; }
+              @media only screen and (max-width: 769px) {
+                /* line 475, main.scss */
+                #sec2 .container .main-container .main-contact .row .main-form form .main-input input {
+                  width: 100%;
+                  margin: 0; } }
+            /* line 487, main.scss */
+            #sec2 .container .main-container .main-contact .row .main-form form .main-input ::-webkit-input-placeholder {
+              font-size: 14px;
+              padding-left: 10px;
+              font-family: 'Raleway', sans-serif;
+              letter-spacing: 2px; }
+            #sec2 .container .main-container .main-contact .row .main-form form .main-input :-ms-input-placeholder {
+              font-size: 14px;
+              padding-left: 10px;
+              font-family: 'Raleway', sans-serif;
+              letter-spacing: 2px; }
+            #sec2 .container .main-container .main-contact .row .main-form form .main-input ::-ms-input-placeholder {
+              font-size: 14px;
+              padding-left: 10px;
+              font-family: 'Raleway', sans-serif;
+              letter-spacing: 2px; }
+            #sec2 .container .main-container .main-contact .row .main-form form .main-input ::placeholder {
+              font-size: 14px;
+              padding-left: 10px;
+              font-family: 'Raleway', sans-serif;
+              letter-spacing: 2px; }
+            /* line 493, main.scss */
+            #sec2 .container .main-container .main-contact .row .main-form form .main-input .textarea {
+              position: relative; }
+              /* line 495, main.scss */
+              #sec2 .container .main-container .main-contact .row .main-form form .main-input .textarea textarea {
+                width: 205px;
+                height: 90px;
+                margin: 0em 1.5em;
+                resize: none;
+                background: #f2f2f2;
+                border: none;
+                outline: none; }
+                @media only screen and (max-width: 769px) {
+                  /* line 495, main.scss */
+                  #sec2 .container .main-container .main-contact .row .main-form form .main-input .textarea textarea {
+                    width: 100%;
+                    margin: 0; } }
+              /* line 508, main.scss */
+              #sec2 .container .main-container .main-contact .row .main-form form .main-input .textarea label {
+                position: absolute;
+                margin-top: 90px; }
+            /* line 513, main.scss */
+            #sec2 .container .main-container .main-contact .row .main-form form .main-input span {
+              margin: 0em 1.5em; }
+              @media only screen and (max-width: 769px) {
+                /* line 513, main.scss */
+                #sec2 .container .main-container .main-contact .row .main-form form .main-input span {
+                  margin: 0; } }
+          /* line 521, main.scss */
+          #sec2 .container .main-container .main-contact .row .main-form form .main-radio .fmale {
+            margin-left: 3em; }
+          /* line 524, main.scss */
+          #sec2 .container .main-container .main-contact .row .main-form form .main-radio .radiobutton {
+            position: relative;
+            margin-left: 1em;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            font-family: 'Raleway', sans-serif;
+            cursor: pointer;
+            font-size: 16px; }
+            @media only screen and (max-width: 769px) {
+              /* line 524, main.scss */
+              #sec2 .container .main-container .main-contact .row .main-form form .main-radio .radiobutton {
+                margin-left: 1.3em; } }
+            /* line 535, main.scss */
+            #sec2 .container .main-container .main-contact .row .main-form form .main-radio .radiobutton label {
+              position: absolute;
+              width: 166px;
+              left: 0;
+              color: red;
+              font-size: 13px; }
+            /* line 542, main.scss */
+            #sec2 .container .main-container .main-contact .row .main-form form .main-radio .radiobutton input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer; }
+            /* line 547, main.scss */
+            #sec2 .container .main-container .main-contact .row .main-form form .main-radio .radiobutton .checkmark {
+              position: absolute;
+              top: 3px;
+              left: 0;
+              height: 19px;
+              width: 19px;
+              border: 1px solid black;
+              border-radius: 50%; }
+              /* line 555, main.scss */
+              #sec2 .container .main-container .main-contact .row .main-form form .main-radio .radiobutton .checkmark::after {
+                content: "";
+                position: absolute;
+                display: none; }
+            /* line 561, main.scss */
+            #sec2 .container .main-container .main-contact .row .main-form form .main-radio .radiobutton input:checked ~ .checkmark::after {
+              display: block; }
+            /* line 564, main.scss */
+            #sec2 .container .main-container .main-contact .row .main-form form .main-radio .radiobutton .checkmark::after {
+              top: 2px;
+              left: 2px;
+              width: 13px;
+              height: 13px;
+              border-radius: 50%;
+              background: #000000; }
+          /* line 574, main.scss */
+          #sec2 .container .main-container .main-contact .row .main-form form .main-checkox-block {
+            margin-top: 4.1em; }
+            @media only screen and (max-width: 769px) {
+              /* line 574, main.scss */
+              #sec2 .container .main-container .main-contact .row .main-form form .main-checkox-block {
+                margin-top: 10px; } }
+            /* line 579, main.scss */
+            #sec2 .container .main-container .main-contact .row .main-form form .main-checkox-block h4 {
+              margin-left: 0.8em;
+              padding-bottom: 8px;
+              font-size: 17px;
+              font-weight: 400;
+              letter-spacing: 1px; }
+              @media only screen and (max-width: 769px) {
+                /* line 579, main.scss */
+                #sec2 .container .main-container .main-contact .row .main-form form .main-checkox-block h4 {
+                  margin-left: 1.4em; } }
+            /* line 589, main.scss */
+            #sec2 .container .main-container .main-contact .row .main-form form .main-checkox-block .main-checkbox {
+              margin-left: 1em;
+              display: block;
+              position: relative;
+              padding-left: 35px;
+              margin-bottom: 12px;
+              font-family: 'Raleway', sans-serif;
+              cursor: pointer;
+              font-size: 15px;
+              letter-spacing: 1px;
+              -webkit-user-select: none;
+                 -moz-user-select: none;
+                  -ms-user-select: none;
+                      user-select: none; }
+              @media only screen and (max-width: 769px) {
+                /* line 589, main.scss */
+                #sec2 .container .main-container .main-contact .row .main-form form .main-checkox-block .main-checkbox {
+                  margin-left: 1.6em; } }
+              /* line 603, main.scss */
+              #sec2 .container .main-container .main-contact .row .main-form form .main-checkox-block .main-checkbox input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer; }
+              /* line 608, main.scss */
+              #sec2 .container .main-container .main-contact .row .main-form form .main-checkox-block .main-checkbox .checkmark {
+                position: absolute;
+                top: 4px;
+                left: 0;
+                height: 17px;
+                width: 17px;
+                border: 1px solid black; }
+                /* line 615, main.scss */
+                #sec2 .container .main-container .main-contact .row .main-form form .main-checkox-block .main-checkbox .checkmark::after {
+                  content: "";
+                  position: absolute;
+                  display: none; }
+              /* line 621, main.scss */
+              #sec2 .container .main-container .main-contact .row .main-form form .main-checkox-block .main-checkbox input:checked ~ .checkmark::after {
+                display: block; }
+              /* line 624, main.scss */
+              #sec2 .container .main-container .main-contact .row .main-form form .main-checkox-block .main-checkbox .checkmark::after {
+                width: 100%;
+                height: 100%;
+                border: 3px solid white; }
+              /* line 629, main.scss */
+              #sec2 .container .main-container .main-contact .row .main-form form .main-checkox-block .main-checkbox input:checked ~ .checkmark {
+                background-color: #58595a; }
+          /* line 634, main.scss */
+          #sec2 .container .main-container .main-contact .row .main-form form .message {
+            position: absolute;
+            bottom: 0.9em;
+            left: 1.6em;
+            font-size: 14px;
+            color: green; }
+            @media only screen and (max-width: 768px) {
+              /* line 634, main.scss */
+              #sec2 .container .main-container .main-contact .row .main-form form .message {
+                bottom: 3.2em;
+                font-size: 13px; } }
+          /* line 645, main.scss */
+          #sec2 .container .main-container .main-contact .row .main-form form button {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin: 0em 2em;
+            width: 75px;
+            height: 35px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background: black;
+            color: #ffffff; }
+            @media only screen and (max-width: 769px) {
+              /* line 645, main.scss */
+              #sec2 .container .main-container .main-contact .row .main-form form button {
+                left: -6px; } }
+
+/* line 669, main.scss */
+#main-footer {
+  width: 100%;
+  padding-bottom: 1em; }
+  @media only screen and (max-width: 992px) {
+    /* line 669, main.scss */
+    #main-footer {
+      border-top: 1px solid #DFDFDF;
+      padding-top: 1em; } }
+  /* line 676, main.scss */
+  #main-footer .main-footer-container {
+    width: 100%; }
+    /* line 678, main.scss */
+    #main-footer .main-footer-container .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      @media only screen and (max-width: 768px) {
+        /* line 678, main.scss */
+        #main-footer .main-footer-container .container {
+          max-width: 768px; } }
+      /* line 683, main.scss */
+      #main-footer .main-footer-container .container .main-created {
+        width: 82%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        @media only screen and (max-width: 992px) {
+          /* line 683, main.scss */
+          #main-footer .main-footer-container .container .main-created {
+            width: 90%; } }
+        /* line 689, main.scss */
+        #main-footer .main-footer-container .container .main-created span {
+          font-family: 'Raleway', sans-serif;
+          font-size: 15px; }
+
+/*# sourceMappingURL=main.css.map */

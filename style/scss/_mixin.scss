@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Andika');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@mixin flex() {
+    display: flex;
+  }
+@mixin flexJA() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin flexJ() {
+    display: flex;
+    justify-content: center;
+  }
+  @mixin flexA() {
+    display: flex;
+    align-items: center;
+  }
+  @mixin flexJsb() {
+    display: flex;
+    justify-content: space-between;
+  }
+  @mixin flexC() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  @mixin font() {
+    font-family: 'Anton', sans-serif;
+  }
+  @mixin font2() {
+    font-family: 'Andika', sans-serif;
+  }
+  @mixin font3() {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  

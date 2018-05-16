@@ -7,6 +7,17 @@ spl_autoload_register(function ($className){
 
 <?php
     $admin = new Admin();
-    $social_id = $_GET['id'];
-    echo json_encode($admin->getSocialById($social_id));
+
+    if (isset($_GET['social_id'])){
+
+        $social_id = $_GET['social_id'];
+
+        echo json_encode($admin->getSocialById($social_id));
+    }
+    if (isset($_GET['service_id'])){
+
+        $service_id = $_GET['service_id'];
+
+        echo json_encode($admin->getServicesById($service_id));
+    }
 ?>

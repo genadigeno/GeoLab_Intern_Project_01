@@ -28,11 +28,12 @@ class Admin extends Database
             echo "Login Err";
         }
 
-    }
+    } //Done
     public function logout(){
         session_destroy();
         echo "<script>window.location = 'admin.php'</script>";
-    }
+    } //Done
+
 
     public function getDashboard(){
         $subscribers = " SELECT * FROM subscribers ";
@@ -51,7 +52,8 @@ class Admin extends Database
 
         return $dashboard = ['subs' => $subscribers, 'services' => $services, 'slider' => $slider];
 //        return $dashboard = ['subs' => $subscribers];
-    }
+    } //Done
+
 
     public function getSubscribers(){
         $subscribers = " SELECT * FROM subscribers ";
@@ -63,7 +65,8 @@ class Admin extends Database
         }else{
             echo "Subs Err";
         }
-    }
+    } //Done
+
 
     public function getSocial(){
         $socials = " SELECT * FROM social ";
@@ -75,15 +78,27 @@ class Admin extends Database
         }else{
             echo "social Err";
         }
-    }
+    } //Done
+
     public function getSocialById($id){
         $socials = " SELECT * FROM social WHERE id= '$id'";
         if($result = $this->connect()->query($socials)){
             $social = $result->fetch_assoc();
             return $social;
         }
-    }
-    public function editSocial(){}
+    } //Done
+
+    public function editSocial($id, $url){
+
+        $sql = "UPDATE social SET url = '$url' WHERE id = '$id'";
+
+        if ($this->connect()->query($sql)){
+            echo "<script>alert('Success Social')</script>";
+        }else{
+            echo "<script>alert('Error Social')</script>";
+        }
+    } //Done
+
 
     public function getServices(){
         $service = " SELECT * FROM services ";
@@ -95,10 +110,60 @@ class Admin extends Database
         }else{
             echo "service Err";
         }
+    } //Done
+
+    public function getServicesById($id){
+        $services = " SELECT * FROM services WHERE id= '$id'";
+        if($result = $this->connect()->query($services)){
+            $services = $result->fetch_assoc();
+            return $services;
+        }
     }
+
     public function editServices(){}
-    public function addServices(){}
-    public function deleteServices(){}
+
+    public function addServices($title, $filename){
+
+        $sql = "INSERT INTO services(title, filename) VALUES('$title', '$filename')";
+
+        if ($this->connect()->query($sql)){
+            echo "<script>alert('Success Services')</script>";
+        }else{
+            echo "<script>alert('Error Services')</script>";
+        }
+    } //Done
+
+    public function deleteServices($id){
+
+        $sql = "SELECT * FROM services WHERE id = '$id'";
+
+        if($result = $this->connect()->query($sql)){
+            while ($row = $result->fetch_assoc()){
+                $fileName = $row;
+            }
+            $fileName = $fileName['filename'];
+
+            $rootPath = $_SERVER['DOCUMENT_ROOT'];
+            $folder = $rootPath."/geolab1/images/";
+
+            if(unlink($folder.$fileName)){
+                echo "<script>alert('Deleted File')</script>";
+            }else{
+                echo "<script>alert('Deleting File Error')</script>";
+            }
+        }
+
+        $sql2 = "DELETE FROM services WHERE id = '$id'";
+
+        if ($this->connect()->query($sql2)){
+            echo "<script>alert('Deleted from DataBase')</script>";
+        }else{
+            echo "<script>alert('Delete err')</script>";
+        }
+
+
+    } //Done
+
 
     public function getSlider(){
         $slider = " SELECT * FROM slider ";
@@ -110,8 +175,11 @@ class Admin extends Database
         }else{
             echo "slider Err";
         }
-    }
+    } //Done
+
     public function editSlider(){}
+
     public function addSlider(){}
+
     public function deleteSlider(){}
 }

@@ -6,16 +6,22 @@ spl_autoload_register(function ($className){
 ?>
 
 <?php
-$admin = new Admin();
-if (isset($_POST['name'])){
-    $name = $_POST['name'];
-    $password = $_POST['pass'];
+    $admin = new Admin();
+    if (isset($_POST['name'])){
+        $name = $_POST['name'];
+        $password = $_POST['pass'];
 
-    $admin->signAsAdmin($name, $password);
-}
-if (isset($_GET['logout'])){
-    $admin->logout();
-}
+        $admin->signAsAdmin($name, $password);
+    }
+    if (isset($_GET['logout'])){
+        $admin->logout();
+    }
+    if (isset($_POST['update'])){
+        $id = $_POST['id'];
+        $url = $_POST['url'];
+
+        $admin->editSocial($id, $url);
+    }
 ?>
 
 
@@ -192,7 +198,7 @@ if (isset($_GET['logout'])){
                             <td><a href="" class="update" data-toggle="modal" data-target="#myModal" data-id="<?=$social['id'];?>"><i class="fa fa-refresh" aria-hidden="true"></i></a></td>
                             <!-- Modal -->
                             <div id="myModal" class="modal fade" role="dialog">
-                                <div class="modal-dialog">
+                                <div class="modal-dialog" style="width: 50%;">
 
                                     <!-- Modal content-->
                                     <div class="modal-content">
@@ -201,8 +207,22 @@ if (isset($_GET['logout'])){
                                             <h4 class="modal-title"></h4>
                                         </div>
                                         <div class="modal-body">
-                                            <?=$social['name'];?>
-                                            <p><?=$social['id'];?></p>
+                                            <form class="form-horizontal" action="social.php" method="post">
+                                                <div style="display: table; width: 50%; margin: 0 auto;">
+                                                    <div class="form-group">
+                                                        <label for="inputEmail3" class="control-label">Name</label>
+                                                        <div class="">
+                                                            <input type="text" name="url" class="form-control" id="inputEmail3">
+                                                            <input type="hidden" name="id" class="form-control" id="inputhidden" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="">
+                                                            <button type="submit" name="update" class="btn btn-default">UPDATE</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -320,9 +340,10 @@ if (isset($_GET['logout'])){
         $.ajax({
             url: 'ajax.php',
             method: 'get',
-            data: {id: id},
+            data: {social_id: id},
             success: function(data){
-                $('.modal-body').html(data['id']);
+                $('#inputEmail3').val(data['url']);
+                $('#inputhidden').val(data['id']);
             },
             dataType: 'json'
         })

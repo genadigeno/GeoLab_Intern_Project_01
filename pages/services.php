@@ -6,16 +6,50 @@ spl_autoload_register(function ($className){
 ?>
 
 <?php
-$admin = new Admin();
-if (isset($_POST['name'])){
-    $name = $_POST['name'];
-    $password = $_POST['pass'];
 
-    $admin->signAsAdmin($name, $password);
-}
-if (isset($_GET['logout'])){
-    $admin->logout();
-}
+    $admin = new Admin();
+
+    if (isset($_POST['name'])){
+        $name = $_POST['name'];
+        $password = $_POST['pass'];
+
+        $admin->signAsAdmin($name, $password);
+    }
+    if (isset($_GET['logout'])){
+        $admin->logout();
+    }
+    if (isset($_POST['add'])){
+
+        $title = $_POST['title'];
+        $file = $_FILES['image'];
+
+        $baseName = $file['name'];
+        $rootPath = $_SERVER['DOCUMENT_ROOT'];
+        $folder = $rootPath."/geolab1/images/";
+
+//        echo "<script>alert('".substr($baseName, -3)."')</script>";
+
+        if (!file_exists($folder.$baseName)){
+            if (move_uploaded_file($file['tmp_name'], $folder.$baseName)){
+                if (substr($baseName, -3) == "svg"){
+                    $admin->addServices($title, $baseName);
+                }else{
+                    echo "image extension is not SVG";
+                }
+            }else{
+                echo "upload error";
+            }
+        }else{
+            echo "this file is already exists";
+        }
+    }
+    if (isset($_POST['delete'])){
+
+        $id = $_POST['id'];
+
+        $admin->deleteServices($id);
+    }
+
 ?>
 
 
@@ -180,43 +214,134 @@ if (isset($_GET['logout'])){
                     <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Add</th>
                         <th>Edit</th>
                         <th>Delete</th>
                     </tr>
                     </thead>
                     <tbody>
                     <?php foreach ($admin->getServices() as $service) { ?>
+
                         <tr>
                             <td><?=$service['title'];?></td>
-                            <td><a href=""><i class="fa fa-plus" aria-hidden="true"></i></a></td>
-                            <td><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-                            <td><a href=""  data-toggle="modal" data-target="#myModal" data-id="<?=$service['id'];?>"><i class="update fa fa-trash" aria-hidden="true"></i></a></td>
-                        </tr>
-                        <!-- Modal -->
-                        <div id="myModal" class="modal fade" role="dialog">
-                            <div class="modal-dialog">
+                            <td><a href="" class="edit" data-toggle="modal" data-target="#myModal2" data-id="<?=$service['id'];?>" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                            <td><a href="" class="delete" data-toggle="modal" data-target="#myModal3" data-id="<?=$service['id'];?>" ><i class="update fa fa-trash" aria-hidden="true"></i></a></td>
+                            <!-- Modal Add -->
+                            <div id="myModal1" class="modal fade" role="dialog">
+                                <div class="modal-dialog" style="width: 50%;">
 
-                                <!-- Modal content-->
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title"><?=$service['title'];?></h4>
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title"></h4>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <form class="form-horizontal" action="services.php" method="post" enctype="multipart/form-data">
+                                                <div style="display: table; width: 50%; margin: 0 auto;">
+                                                    <div class="form-group">
+                                                        <label for="inputEmail3" class="control-label">Title</label>
+                                                        <div class="">
+                                                            <input type="text" name="title" class="form-control" id="inputEmail3" required>
+                                                            <input type="hidden" name="id" class="form-control" id="hideAdd" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputImage" class="control-label">Upload Only SVG Image</label>
+                                                        <div class="">
+                                                            <input type="file" name="image" class="form-control" id="inputImage" accept=".svg" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="">
+                                                            <button type="submit" name="add" class="btn btn-default">ADD</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                        <p><?=$service['id'];?></p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
+
                                 </div>
-
                             </div>
-                        </div>
-                    <?php } ?>
+                            <!-- Modal Edit -->
+                            <div id="myModal2" class="modal fade" role="dialog">
+                                <div class="modal-dialog" style="width: 50%;">
 
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title"></h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="form-horizontal" action="services.php" method="post">
+                                                <div style="display: table; width: 50%; margin: 0 auto;">
+                                                    <div class="form-group">
+                                                        <label for="inputEmail3" class="control-label">Name</label>
+                                                        <div class="">
+                                                            <input type="text" name="title" class="form-control" id="inputEmail3">
+                                                            <input type="hidden" name="id" class="form-control" id="hideEdit" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="">
+                                                            <button type="submit" name="edit" class="btn btn-default">Edit</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Modal Delete-->
+                            <div id="myModal3" class="modal fade" role="dialog">
+                                <div class="modal-dialog" style="width: 50%;">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title"></h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="form-horizontal" action="services.php" method="post">
+                                                <div style="display: table; width: 50%; margin: 0 auto;">
+                                                    <div class="form-group">
+                                                        <div class="">
+                                                            <input type="hidden" name="id" class="form-control" id="hideDel" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="">
+                                                            <button type="submit" name="delete" class="btn btn-default">DELETE</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </tr>
+
+                    <?php } ?>
                     </tbody>
                 </table>
+                <button class="add btn btn-default" data-toggle="modal" data-target="#myModal1" data-id="<?=$service['id'];?>" >ADD</button>
             </div><!-- row -->
         </div><!-- br-pagebody -->
 
@@ -287,6 +412,18 @@ if (isset($_GET['logout'])){
 <script src="../js/map.shiftworker.js"></script>
 <script src="../js/ResizeSensor.js"></script>
 <script src="../js/dashboard.js"></script>
+<script type="text/javascript">
+    function validateFileType(){
+        var fileName = document.getElementById("inputImage").value;
+        var idxDot = fileName.lastIndexOf(".") + 1;
+        var extFile = fileName.substr(idxDot, fileName.length).toLowerCase();
+        if (extFile=="svg"){
+            //TO DO
+        }else{
+            alert("Only jpg/jpeg and png files are allowed!");
+        }
+    }
+</script>
 <script>
     $(function(){
         'use strict'
@@ -314,6 +451,20 @@ if (isset($_GET['logout'])){
             }
         }
     });
+</script>
+<script>
+    $('.delete').click(function(){
+        var id = $(this).data('id');
+        $.ajax({
+            url: 'ajax.php',
+            method: 'get',
+            data: {service_id: id},
+            success: function(data){
+                $('#hideDel').val(data['id']);
+            },
+            dataType: 'json'
+        })
+    })
 </script>
 </body>
 </html>

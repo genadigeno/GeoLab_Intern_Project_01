@@ -31,7 +31,7 @@ class Admin extends Database
     } //Done
     public function logout(){
         session_destroy();
-        echo "<script>window.location = 'admin.php'</script>";
+        echo "<script>window.location = 'index.php'</script>";
     } //Done
 
 
@@ -118,7 +118,7 @@ class Admin extends Database
             $services = $result->fetch_assoc();
             return $services;
         }
-    }
+    } //Done
 
     public function editServices($id, $name, $filename){
         $sql = "UPDATE services SET title = '$name', filename = '$filename' WHERE id = '$id'";
@@ -127,7 +127,7 @@ class Admin extends Database
         }else{
             echo "<script>alert('Error Editing')</script>";
         }
-    }
+    } //Done
 
     public function addServices($title, $filename){
 
@@ -136,7 +136,7 @@ class Admin extends Database
         if ($this->connect()->query($sql)){
             echo "<script>alert('Success Services')</script>";
         }else{
-            echo "<script>alert('Error Services')</script>";
+            echo "<script>alert('Added Services')</script>";
         }
     } //Done
 
@@ -184,9 +184,78 @@ class Admin extends Database
         }
     } //Done
 
-    public function editSlider(){}
+    public function getSliderById($id){
+        $slider = " SELECT * FROM slider WHERE id= '$id'";
+        if($result = $this->connect()->query($slider)){
+            $slider = $result->fetch_assoc();
+            return $slider;
+        }
+    }
 
-    public function addSlider(){}
+    public function editSlider($id, $name, $filename, $date){
+        $sql = "UPDATE slider SET name = '$name', filename = '$filename', date = '$date' WHERE id = '$id'";
+        if ($this->connect()->query($sql)){
+            echo "<script>alert('Success Edited')</script>";
+        }else{
+            echo "<script>alert('Error Editing')</script>";
+        }
+    }
 
-    public function deleteSlider(){}
+    public function addSlider($title, $baseName, $date){
+        $sql = "INSERT INTO slider(name, filename, date) VALUES('$title', '$baseName', '$date')";
+
+        if ($this->connect()->query($sql)){
+            echo "<script>alert('Success Services')</script>";
+        }else{
+            echo "<script>alert('Added Slider')</script>";
+        }
+    } //Done
+
+    public function deleteSlider($id){
+        $sql = "SELECT * FROM slider WHERE id = '$id'";
+
+        if($result = $this->connect()->query($sql)){
+            while ($row = $result->fetch_assoc()){
+                $fileName = $row;
+            }
+            $fileName = $fileName['filename'];
+
+            $rootPath = $_SERVER['DOCUMENT_ROOT'];
+            $folder = $rootPath."/geolab1/images/";
+
+            if(unlink($folder.$fileName)){
+                echo "<script>alert('Deleted File')</script>";
+            }else{
+                echo "<script>alert('Deleting File Error')</script>";
+            }
+        }
+
+        $sql2 = "DELETE FROM slider WHERE id = '$id'";
+
+        if ($this->connect()->query($sql2)){
+            echo "<script>alert('Deleted from DataBase')</script>";
+        }else{
+            echo "<script>alert('Delete err')</script>";
+        }
+    }
+
+    public function deleteImage($id){
+        $sql = "SELECT * FROM slider WHERE id = '$id'";
+
+        if($result = $this->connect()->query($sql)){
+            while ($row = $result->fetch_assoc()){
+                $fileName = $row;
+            }
+            $fileName = $fileName['filename'];
+
+            $rootPath = $_SERVER['DOCUMENT_ROOT'];
+            $folder = $rootPath."/geolab1/images/";
+
+            if(unlink($folder.$fileName)){
+                return true;
+            }else{
+                echo "<script>alert('Deleting File Error From images folder')</script>";
+            }
+        }
+    }
 }

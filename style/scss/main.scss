@@ -16,11 +16,12 @@ body{
 
 header{
     position: relative;
-    height: 100vh;
 }
 .main-container{
     position: relative;
+    width: 100%;
     .logo-nav-container{
+        position: absolute;
         @include flexJsb();
         nav{
             position: fixed;
@@ -78,6 +79,9 @@ header{
                     font-size: 4.5em;
                     margin: 5px;
                 }
+                @media only screen and(max-width: 576px) {
+                    font-size: 3.1em;
+                }
                 span{
                     position: absolute;
                     top: 0;
@@ -97,6 +101,11 @@ header{
                         width: 13px;
                         height: 13px;
                         transform: translate(8px, -3px);
+                    }
+                    @media only screen and(max-width: 576px) {
+                        width: 10px;
+                        height: 10px;
+                        transform: translate(4.5px, -4px);
                     }
                 }
             }
@@ -119,7 +128,6 @@ header{
                     right: 0;
                     height: 4px;
                     border-radius: 7px;
-                    // background: $nav-background;
                     transition: .2s ease-in;
                 }
                 span:nth-child(2){
@@ -133,15 +141,106 @@ header{
         }
     }
     .main-slider{
-        position: absolute;
         width: $width;
-        height: 100vh;
+        height: auto;
         top: 0;
-        background: #b16d6d;
         z-index: -1;
         .slider-container{
             position: relative;
-            height: 100vh;
+            .slider1{
+                position: relative;
+                width: 100%;
+                overflow: hidden;
+                .btnPrev,.btnNext{
+                    border-radius: 50%;
+                    top: 40%;
+                    width: 120px;
+                    height: 120px;
+                    background: #ffffff;
+                    position: absolute;
+                    cursor: pointer;
+                   font-size: 2.5em;
+                    color: #ff0000;
+                    @media only screen and(max-width: 992px) {
+                        width: 100px;
+                        height: 100px;
+                        font-size: 2.2em;
+                    }
+                    @media only screen and(max-width: 768px) {
+                        width: 80px;
+                        height: 80px;
+                        font-size: 2em;
+                    }
+                    @media only screen and(max-width: 576px) {
+                        width: 60px;
+                        height: 60px;
+                        font-size: 1.6em;
+                    }
+                    
+                }
+                .btnPrev{
+                    left: 0;
+                    transform: translateX(-50%);
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding-right: 10px;
+                }
+                .btnNext{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    right: 0;
+                    transform: translateX(50%);
+                    padding-left: 10px;
+                }
+                .my-slides{
+                    width: 100%;
+                    position: relative;
+                    img{
+                        width: 100%;
+                        height: 780px;
+                        @media only screen and(max-width: 1200px) {
+                            height: 620px;
+                        }
+                        @media only screen and(max-width: 992px) {
+                            height: 520px;
+                        }
+                        @media only screen and(max-width: 768px) {
+                            height: 440px;
+                        }
+                        @media only screen and(max-width: 576px) {
+                            height: 250px;
+                        }
+                    }
+                    .slide-text{
+                        position: absolute;
+                        bottom: 8%;
+                        right: 5%;
+                        z-index: 1;
+                        color: #ffffff;
+                        h1{
+                            text-align: right;
+                            @media only screen and(max-width: 768px) {
+                                font-size: 1.5em;
+                            }
+                            @media only screen and(max-width: 576px) {
+                                font-size: 1em;
+                            }
+                        }
+                        h2{
+                            text-align: right;
+                            font-size: 1.5em;
+                            @media only screen and(max-width: 768px) {
+                                font-size: 1em;
+                            }
+                            @media only screen and(max-width: 576px) {
+                                font-size: .5em;
+                            }
+                        }
+                    }
+                }
+            }
             span{
                 position: absolute;
                 width: 100px;
@@ -158,6 +257,14 @@ header{
                 left: 50%;
                 transform: rotate(45deg);
                 background: rgba($nav-background, 0.329);
+                @media only screen and(max-width: 768px) {
+                    width: 30px;
+                    height: 30px;
+                }
+                @media only screen and(max-width: 576px) {
+                    width: 20px;
+                    height: 20px;
+                }
             }
             span:nth-child(2){
                 width: 80px;
@@ -167,6 +274,14 @@ header{
                 left: 20%;
                 transform: rotate(45deg);
                 background: rgba($nav-background, 0.52);
+                @media only screen and(max-width: 768px) {
+                    width: 50px;
+                    height: 50px;
+                }
+                @media only screen and(max-width: 576px) {
+                    width: 35px;
+                    height: 35px;
+                }
             }
             span:nth-child(3){
                 width: 21px;
@@ -174,6 +289,10 @@ header{
                 border-radius: 50%;
                 top: 30%;
                 left: 10%;
+                @media only screen and(max-width: 768px) {
+                    width: 15px;
+                    height: 15px;
+                }
             }
             span:nth-child(4){
                 width: 21px;
@@ -181,6 +300,10 @@ header{
                 border-radius: 50%;
                 top: 70%;
                 left: 3%;
+                @media only screen and(max-width: 768px) {
+                    width: 15px;
+                    height: 15px;
+                }
             }
             span:nth-child(5){
                 width: 40px;
@@ -189,6 +312,14 @@ header{
                 top: 7%;
                 left: 42%;
                 background-color: rgba($nav-background, 0.65);
+                @media only screen and(max-width: 768px) {
+                    width: 35px;
+                    height: 35px;
+                }
+                @media only screen and(max-width: 576px) {
+                    width: 30px;
+                    height: 30px;
+                }
             }
             span:nth-child(6){
                 width: 40px;
@@ -197,6 +328,14 @@ header{
                 top: 5%;
                 left: 80%;
                 background: rgba($sircle-color, 0.6509803921568628);
+                @media only screen and(max-width: 768px) {
+                    width: 35px;
+                    height: 35px;
+                }
+                @media only screen and(max-width: 576px) {
+                    width: 30px;
+                    height: 30px;
+                }
             }
             span:nth-child(7){
                 width: 80px;
@@ -205,6 +344,14 @@ header{
                 top: 15%;
                 left: 65%;
                 background: rgba($nav-background, 0.89);
+                @media only screen and(max-width: 768px) {
+                    width: 50px;
+                    height: 50px;
+                }
+                @media only screen and(max-width: 576px) {
+                    width: 35px;
+                    height: 35px;
+                }
             }
             span:nth-child(8){
                 width: 21px;
@@ -212,6 +359,10 @@ header{
                 border-radius: 50%;
                 top: 36%;
                 left: 46%;
+                @media only screen and(max-width: 768px) {
+                    width: 15px;
+                    height: 15px;
+                }
             }
             span:nth-child(9){
                 width: 21px;
@@ -220,6 +371,10 @@ header{
                 top: 50%;
                 left: 65%;
                 background: rgba(255, 255, 255, 0.22);
+                @media only screen and(max-width: 768px) {
+                    width: 15px;
+                    height: 15px;
+                }
             }
             span:nth-child(10){
                 width: 21px;
@@ -228,11 +383,24 @@ header{
                 top: 43%;
                 left: 80%;
                 background: rgba($sircle-color, 0.82);
+                @media only screen and(max-width: 768px) {
+                    width: 15px;
+                    height: 15px;
+                }
             }
         }
     }
 }
 
+
+.fades{
+    animation: slideFade .5s ;
+}
+@keyframes slideFade{
+    0%{opacity: 1;}
+    50%{opacity: .4;}
+    100%{opacity: 1;}
+}
 .colorwhite{
     background: $nav-background;
 }
@@ -329,22 +497,50 @@ header{
     .car-img{
         width: $width;
         overflow: hidden;
-        img{
+        position: relative;
+        .f{
             width: $width;
             @media only screen and(max-width: 769px) {
-                width: clac($width + 50%);
+                width: 150%;
+                transform: translateX(-13%);
+            }
+        }
+        .animationCar{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            animation: carAnimation 10s ease-in infinite;
+            transform: translateX(50%);
+            @media only screen and(max-width: 769px) {
+                width: 150%;
+                transform: translateX(47%);
+                animation: carAnimation2 7s ease-in infinite;
             }
         }
     }
 }
 
+@keyframes carAnimation{
+    from{
+        transform: translateX(50%);
+    }
+    to{
+        transform: translateX(-70%);
+    }
+}
+@keyframes carAnimation2{
+    from{
+        transform: translateX(47%);
+    }
+    to{
+        transform: translateX(-35%);
+    }
+}
 
 
 // =====contact=====
 #sec2{
     width: 100%;
-    // height: 100vh;
-    // background: red;
     padding-top: 1em;
     padding-bottom: 1em;
     .container{
@@ -421,6 +617,7 @@ header{
                                 height: 40px;
                                 border-radius: 50%;
                                 border: 1px solid black;
+                                color: #000000;
                                 @include flexJA();
                                 font-size: 18px;
                                 cursor: pointer;
@@ -479,6 +676,7 @@ header{
                                     border: none;
                                     outline: none;
                                     background: #f2f2f2;
+                                    padding-left: 15px;
                                     @media only screen and(max-width:769px) {
                                         width: 100%;
                                         margin: 0;
@@ -486,7 +684,7 @@ header{
                                 }
                                         ::placeholder{
                                             font-size: 14px;
-                                            padding-left: 10px;
+                                            // padding-left: 10px;
                                             @include font3();
                                             letter-spacing: 2px;
                                         }
@@ -500,6 +698,7 @@ header{
                                     background: #f2f2f2;
                                     border: none;
                                     outline: none;
+                                    padding-left: 15px;
                                     @media only screen and(max-width:769px) {
                                         width: 100%;
                                         margin: 0;

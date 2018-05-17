@@ -6,16 +6,16 @@ spl_autoload_register(function ($className){
 ?>
 
 <?php
-$admin = new Admin();
-if (isset($_POST['name'])){
-    $name = $_POST['name'];
-    $password = $_POST['pass'];
+    $admin = new Admin();
+    if (isset($_POST['name'])){
+        $name = $_POST['name'];
+        $password = $_POST['pass'];
 
-    $admin->signAsAdmin($name, $password);
-}
-if (isset($_GET['logout'])){
-    $admin->logout();
-}
+        $admin->signAsAdmin($name, $password);
+    }
+    if (isset($_GET['logout'])){
+        $admin->logout();
+    }
 ?>
 
 
@@ -69,45 +69,45 @@ if (isset($_GET['logout'])){
 <div class="br-logo"><a href="../index.php"><span>[</span>Car <i>Service</i><span>]</span></a></div>
 <?php if (isset($_SESSION['name'])) { ?>
     <div class="br-sideleft overflow-y-auto">
-        <label class="sidebar-label pd-x-10 mg-t-20 op-3">Navigation</label>
-        <ul class="br-sideleft-menu">
-            <li class="br-menu-item">
-                <a href="admin.php" class="br-menu-link active">
-                    <i class="menu-item-icon icon  tx-24"></i>
-                    <span class="menu-item-label">Dashboard</span>
-                </a><!-- br-menu-link -->
-            </li><!-- br-menu-item -->
+    <label class="sidebar-label pd-x-10 mg-t-20 op-3">Navigation</label>
+    <ul class="br-sideleft-menu">
+        <li class="br-menu-item">
+            <a href="index.php" class="br-menu-link active">
+                <i class="menu-item-icon icon  tx-24"></i>
+                <span class="menu-item-label">Dashboard</span>
+            </a><!-- br-menu-link -->
+        </li><!-- br-menu-item -->
 
 
-            <li class="br-menu-item">
-                <a href="home.php" class="br-menu-link">
-                    <i class="menu-item-icon icon ion-ios-home-outline tx-24"></i>
-                    <span class="menu-item-label">Home</span>
-                </a><!-- br-menu-link -->
-            </li><!-- br-menu-item -->
-            <li class="br-menu-item">
-                <a href="subs.php" class="br-menu-link">
-                    <i class="menu-item-icon icon ion-ios-email-outline tx-24"></i>
-                    <span class="menu-item-label">Subscribers</span>
-                </a><!-- br-menu-link -->
-            </li><!-- br-menu-item -->
+        <li class="br-menu-item">
+            <a href="home.php" class="br-menu-link">
+                <i class="menu-item-icon icon ion-ios-home-outline tx-24"></i>
+                <span class="menu-item-label">Home</span>
+            </a><!-- br-menu-link -->
+        </li><!-- br-menu-item -->
+        <li class="br-menu-item">
+            <a href="subs.php" class="br-menu-link">
+                <i class="menu-item-icon icon ion-ios-email-outline tx-24"></i>
+                <span class="menu-item-label">Subscribers</span>
+            </a><!-- br-menu-link -->
+        </li><!-- br-menu-item -->
 
-            <li class="br-menu-item">
-                <a href="services.php" class="br-menu-link">
-                    <i class="menu-item-icon icon ion-ios-at-outline tx-24"></i>
-                    <span class="menu-item-label">Services</span>
-                </a>
-            </li>
-            <li class="br-menu-item">
-                <a href="social.php" class="br-menu-link">
-                    <i class="menu-item-icon icon ion-ios-filing-outline tx-24"></i>
-                    <span class="menu-item-label">Social Links</span>
-                </a><!-- br-menu-link -->
-            </li><!-- br-menu-item -->
-        </ul><!-- br-sideleft-menu -->
+        <li class="br-menu-item">
+            <a href="services.php" class="br-menu-link">
+                <i class="menu-item-icon icon ion-ios-at-outline tx-24"></i>
+                <span class="menu-item-label">Services</span>
+            </a>
+        </li>
+        <li class="br-menu-item">
+            <a href="social.php" class="br-menu-link">
+                <i class="menu-item-icon icon ion-ios-filing-outline tx-24"></i>
+                <span class="menu-item-label">Social Links</span>
+            </a><!-- br-menu-link -->
+        </li><!-- br-menu-item -->
+    </ul><!-- br-sideleft-menu -->
 
-        <br>
-    </div><!-- br-sideleft -->
+    <br>
+</div><!-- br-sideleft -->
 <?php } else { ?>
 <?php } ?>
 <!-- ########## END: LEFT PANEL ########## -->
@@ -127,31 +127,31 @@ if (isset($_GET['logout'])){
     </div><!-- br-header-left -->
     <div class="br-header-right">
 
-        <nav class="nav">
-            <div class="dropdown">
-                <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
-                    <span class="logged-name hidden-md-down"><?=$_SESSION['name']?></span>
-                    <img src="http://via.placeholder.com/500x500" class="wd-32 rounded-circle" alt="">
-                    <span class="square-10 bg-success"></span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-header wd-250">
-                    <div class="tx-center">
-                        <a href=""><img src="http://via.placeholder.com/500x500" class="wd-80 rounded-circle" alt=""></a>
-                        <h6 class="logged-fullname">Katherine P. Lumaad</h6>
-                        <p>youremail@domain.com</p>
-                    </div>
-                    <hr>
-                    <ul class="list-unstyled user-profile-nav">
-                        <li><a href=""><i class="icon ion-ios-person"></i> Edit Profile</a></li>
-                        <li><a href=""><i class="icon ion-ios-gear"></i> Settings</a></li>
-                        <li><a href=""><i class="icon ion-ios-download"></i> Downloads</a></li>
-                        <li><a href=""><i class="icon ion-ios-star"></i> Favorites</a></li>
-                        <li><a href=""><i class="icon ion-ios-folder"></i> Collections</a></li>
-                        <li><a href="admin.php?logout=yes"><i class="icon ion-power"></i> Sign Out</a></li>
-                    </ul>
-                </div><!-- dropdown-menu -->
-            </div><!-- dropdown -->
-        </nav>
+            <nav class="nav">
+                <div class="dropdown">
+                    <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
+                        <span class="logged-name hidden-md-down"><?=$_SESSION['name']?></span>
+                        <img src="http://via.placeholder.com/500x500" class="wd-32 rounded-circle" alt="">
+                        <span class="square-10 bg-success"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-header wd-250">
+                        <div class="tx-center">
+                            <a href=""><img src="http://via.placeholder.com/500x500" class="wd-80 rounded-circle" alt=""></a>
+                            <h6 class="logged-fullname">Katherine P. Lumaad</h6>
+                            <p>youremail@domain.com</p>
+                        </div>
+                        <hr>
+                        <ul class="list-unstyled user-profile-nav">
+                            <li><a href=""><i class="icon ion-ios-person"></i> Edit Profile</a></li>
+                            <li><a href=""><i class="icon ion-ios-gear"></i> Settings</a></li>
+                            <li><a href=""><i class="icon ion-ios-download"></i> Downloads</a></li>
+                            <li><a href=""><i class="icon ion-ios-star"></i> Favorites</a></li>
+                            <li><a href=""><i class="icon ion-ios-folder"></i> Collections</a></li>
+                            <li><a href="index.php?logout=yes"><i class="icon ion-power"></i> Sign Out</a></li>
+                        </ul>
+                    </div><!-- dropdown-menu -->
+                </div><!-- dropdown -->
+            </nav>
         <?php  } else  { ?>
 
         <?php } ?>
@@ -159,50 +159,93 @@ if (isset($_GET['logout'])){
 </div><!-- br-header -->
 <!-- ########## END: HEAD PANEL ########## -->
 
+<!-- ########## START: RIGHT PANEL ########## -->
+<div class="br-sideright">
+    <ul class="nav nav-tabs sidebar-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" role="tab" href="#contacts"><i class="icon ion-ios-contact-outline tx-24"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" role="tab" href="#attachments"><i class="icon ion-ios-folder-outline tx-22"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" role="tab" href="#calendar"><i class="icon ion-ios-calendar-outline tx-24"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" role="tab" href="#settings"><i class="icon ion-ios-gear-outline tx-24"></i></a>
+        </li>
+    </ul><!-- sidebar-tabs -->
+</div><!-- br-sideright -->
+<!-- ########## END: RIGHT PANEL ########## --->
+
 <!-- ########## START: MAIN PANEL ########## -->
 <?php if (isset($_SESSION['name'])) { ?>
-
     <div class="br-mainpanel">
         <div class="br-pagetitle">
-            <i class="icon ion-ios-email-outline"></i>
+            <i class="icon ion-ios-home-outline"></i>
             <div>
-                <h4>Subscribers</h4>
+                <h4>Dashboard</h4>
                 <p class="mg-b-0">Do bigger things with Bracket plus, the responsive bootstrap 4 admin template.</p>
             </div>
         </div><!-- d-flex -->
 
-
-
-
         <div class="br-pagebody">
             <div class="row row-sm">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <?php foreach ($admin->getSubscribers() as $subscriber) { ?>
-                        <tr>
-                            <td><?=$subscriber['name'];?></td>
-                            <td><?=$subscriber['mail'];?></td>
-                            <td><?=$subscriber['date'];?></td>
-                        </tr>
-
-                    <?php } ?>
-                    </tbody>
-                </table>
+                <div class="col-sm-6 col-xl-3">
+                    <div class="bg-info rounded overflow-hidden">
+                        <div class="pd-x-20 pd-t-20 d-flex align-items-center">
+                            <i class="ion ion-earth tx-60 lh-0 tx-white op-7"></i>
+                            <div class="mg-l-20">
+                                <p class="tx-10 tx-spacing-1 tx-mont tx-semibold tx-uppercase tx-white-8 mg-b-10">Subscribers</p>
+                                <p class="tx-24 tx-white tx-lato tx-bold mg-b-0 lh-1"><?=$admin->getDashboard()['subs'] ?></p>
+                                <span class="tx-11 tx-roboto tx-white-8"> </span>
+                            </div>
+                        </div>
+                        <div id="ch1" class="ht-50 tr-y-1"></div>
+                    </div>
+                </div><!-- col-3 -->
+                <div class="col-sm-6 col-xl-3 mg-t-20 mg-sm-t-0">
+                    <div class="bg-purple rounded overflow-hidden">
+                        <div class="pd-x-20 pd-t-20 d-flex align-items-center">
+                            <i class="ion ion-bag tx-60 lh-0 tx-white op-7"></i>
+                            <div class="mg-l-20">
+                                <p class="tx-10 tx-spacing-1 tx-mont tx-semibold tx-uppercase tx-white-8 mg-b-10">Services</p>
+                                <p class="tx-24 tx-white tx-lato tx-bold mg-b-0 lh-1"><?=$admin->getDashboard()['services'] ?></p>
+                                <span class="tx-11 tx-roboto tx-white-8"> </span>
+                            </div>
+                        </div>
+                        <div id="ch3" class="ht-50 tr-y-1"></div>
+                    </div>
+                </div><!-- col-3 -->
+                <div class="col-sm-6 col-xl-3 mg-t-20 mg-xl-t-0">
+                    <div class="bg-teal rounded overflow-hidden">
+                        <div class="pd-x-20 pd-t-20 d-flex align-items-center">
+                            <i class="ion ion-monitor tx-60 lh-0 tx-white op-7"></i>
+                            <div class="mg-l-20">
+                                <p class="tx-10 tx-spacing-1 tx-mont tx-semibold tx-uppercase tx-white-8 mg-b-10">Slider Images Quantity</p>
+                                <p class="tx-24 tx-white tx-lato tx-bold mg-b-0 lh-1"><?=$admin->getDashboard()['slider'] ?></p>
+                                <span class="tx-11 tx-roboto tx-white-8"> </span>
+                            </div>
+                        </div>
+                        <div id="ch2" class="ht-50 tr-y-1"></div>
+                    </div>
+                </div><!-- col-3 -->
+                <div class="col-sm-6 col-xl-3 mg-t-20 mg-xl-t-0">
+                    <div class="bg-primary rounded overflow-hidden">
+                        <div class="pd-x-20 pd-t-20 d-flex align-items-center">
+                            <i class="ion ion-clock tx-60 lh-0 tx-white op-7"></i>
+                            <div class="mg-l-20">
+                                <p class="tx-10 tx-spacing-1 tx-mont tx-semibold tx-uppercase tx-white-8 mg-b-10"> </p>
+                                <p class="tx-24 tx-white tx-lato tx-bold mg-b-0 lh-1"> </p>
+                                <span class="tx-11 tx-roboto tx-white-8"> </span>
+                            </div>
+                        </div>
+                        <div id="ch4" class="ht-50 tr-y-1"></div>
+                    </div>
+                </div><!-- col-3 -->
             </div><!-- row -->
+
         </div><!-- br-pagebody -->
-
-
-
-
-
-
         <footer class="br-footer" style="margin-top: 30%;">
             <div class="footer-left">
                 <div class="mg-b-2">Copyright &copy; 2018.  All Rights Reserved.</div>
@@ -217,7 +260,7 @@ if (isset($_GET['logout'])){
     </div>
 <?php } else { ?>
     <div style="margin-top: 100px">
-        <form class="form-horizontal" action="admin.php" method="post">
+        <form class="form-horizontal" action="index.php" method="post">
             <div style="display: table; width: 50%; margin: 0 auto;">
                 <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">Name</label>

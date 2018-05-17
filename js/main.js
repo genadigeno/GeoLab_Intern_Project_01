@@ -83,46 +83,29 @@ $('#form').validate({
 
 
 
+var slideindex = 1;
+ShowSlides(slideindex);
 
+function PlusSlides(n){
+    ShowSlides(slideindex+=n);
+}
 
+function currentSlide(n){
+    ShowSlides(slideindex = n);
+}
 
+function ShowSlides(n){
+    var i;
+    var slides = document.getElementsByClassName("my-slides");
 
-
-
-
-
-
-
-
-
-// var slide = document.getElementsByClassName('slide-img');
-
-// var nexts = document.getElementById('next');
-// var perv = document.getElementById('prev');
-
-// cindex = 0;
-
-// pos = 100;
-
-
-//     function swimg(){
-//         for(var i=0; i<slide.length; i++){
-//             slide[i].style.left = -pos + cindex + '%';
-//         }
-//     }
-
-// nexts.addEventListener('click', function () { 
-//     cindex++;
-//     if(cindex>=slide.length){
-//         cindex = 0;
-//     }
-//     swimg();
-//  })
-
-//  prev.addEventListener('click', function () { 
-//     cindex--;
-//     if(cindex<0){
-//         cindex = slide.length -1;
-//     }
-//     swimg();
-//  })
+    if(n>slides.length){
+        slideindex = 1;
+    }
+    if(n<1){
+        slideindex = slides.length;
+    }
+    for(i=0; i<slides.length; i++){
+        slides[i].style.display = "none";
+    }
+    slides[slideindex - 1].style.display = "block";
+}

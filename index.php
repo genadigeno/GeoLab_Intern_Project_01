@@ -59,8 +59,18 @@
                     <span></span><span></span>
                     <span></span><span></span>
                     <span></span><span></span>
-                    <div class="slider">
-                        
+                    <div class="slider1">
+                        <?php foreach ($guest->getSlider() as $slider) { ?>
+                            <div class="my-slides fades">
+                                <img src="images/<?=$slider['filename'];?>" alt="">
+                                <div class="slide-text">
+                                    <h1><?=$slider['date'];?></h1>
+                                    <h2><?=$slider['name'];?></h2>
+                                </div>
+                            </div>
+                        <?php } ?>
+                        <div class="btnPrev"  onclick="PlusSlides(-1)"><i class="fas fa-arrow-left"></i></div>
+                        <div class="btnNext"  onclick="PlusSlides(1)"><i class="fas fa-arrow-right"></i></div>
                     </div>
                 </div>
             </div>
@@ -114,7 +124,8 @@
                 </div>
             </div>
             <div class="car-img">
-                <img src="images/img2.png" alt="" width="100%">
+                <img src="images/img2.png" class="f" alt="" width="100%">
+                <img src="images/animation.png" alt="" class="animationCar" width="100%">
             </div>
         </section>
 

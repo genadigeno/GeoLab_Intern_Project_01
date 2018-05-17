@@ -72,7 +72,7 @@ if (isset($_GET['logout'])){
         <label class="sidebar-label pd-x-10 mg-t-20 op-3">Navigation</label>
         <ul class="br-sideleft-menu">
             <li class="br-menu-item">
-                <a href="admin.php" class="br-menu-link active">
+                <a href="index.php" class="br-menu-link active">
                     <i class="menu-item-icon icon  tx-24"></i>
                     <span class="menu-item-label">Dashboard</span>
                 </a><!-- br-menu-link -->
@@ -147,7 +147,7 @@ if (isset($_GET['logout'])){
                         <li><a href=""><i class="icon ion-ios-download"></i> Downloads</a></li>
                         <li><a href=""><i class="icon ion-ios-star"></i> Favorites</a></li>
                         <li><a href=""><i class="icon ion-ios-folder"></i> Collections</a></li>
-                        <li><a href="admin.php?logout=yes"><i class="icon ion-power"></i> Sign Out</a></li>
+                        <li><a href="index.php?logout=yes"><i class="icon ion-power"></i> Sign Out</a></li>
                     </ul>
                 </div><!-- dropdown-menu -->
             </div><!-- dropdown -->
@@ -164,9 +164,9 @@ if (isset($_GET['logout'])){
 
     <div class="br-mainpanel">
         <div class="br-pagetitle">
-            <i class="icon ion-ios-filing-outline"></i>
+            <i class="icon ion-ios-email-outline"></i>
             <div>
-                <h4>Social Links</h4>
+                <h4>Subscribers</h4>
                 <p class="mg-b-0">Do bigger things with Bracket plus, the responsive bootstrap 4 admin template.</p>
             </div>
         </div><!-- d-flex -->
@@ -178,25 +178,20 @@ if (isset($_GET['logout'])){
             <div class="row row-sm">
                 <table class="table table-striped">
                     <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>FileName</th>
-                        <th>Date</th>
-                        <th>Add</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
-                    </tr>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Date</th>
+                        </tr>
                     </thead>
                     <tbody>
-                    <?php foreach ($admin->getSlider() as $slider) { ?>
+                    <?php foreach ($admin->getSubscribers() as $subscriber) { ?>
                         <tr>
-                            <td><?=$slider['name'];?></td>
-                            <td><?=$slider['filename'];?></td>
-                            <td><?=$slider['date'];?></td>
-                            <td><a href=""><i class="fa fa-plus" aria-hidden="true"></i></a></td>
-                            <td><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-                            <td><a href=""><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                            <td><?=$subscriber['name'];?></td>
+                            <td><?=$subscriber['mail'];?></td>
+                            <td><?=$subscriber['date'];?></td>
                         </tr>
+
                     <?php } ?>
                     </tbody>
                 </table>
@@ -222,7 +217,7 @@ if (isset($_GET['logout'])){
     </div>
 <?php } else { ?>
     <div style="margin-top: 100px">
-        <form class="form-horizontal" action="admin.php" method="post">
+        <form class="form-horizontal" action="index.php" method="post">
             <div style="display: table; width: 50%; margin: 0 auto;">
                 <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">Name</label>

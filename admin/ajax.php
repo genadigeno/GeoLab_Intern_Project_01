@@ -20,4 +20,10 @@ spl_autoload_register(function ($className){
 
         echo json_encode($admin->getServicesById($service_id));
     }
+    if (isset($_GET['slider_id'])){
+
+        $slider_id = $_GET['slider_id'];
+
+        echo json_encode($admin->getSliderById($slider_id));
+    }
 ?>

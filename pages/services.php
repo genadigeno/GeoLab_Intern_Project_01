@@ -49,6 +49,13 @@ spl_autoload_register(function ($className){
 
         $admin->deleteServices($id);
     }
+    if (isset($_POST['edit'])){
+        $id = $_POST['id'];
+        $title = $_POST['title'];
+        $filename = $_POST['filename'];
+
+        $admin->editServices($id, $title, $filename);
+    }
 
 ?>
 
@@ -216,6 +223,7 @@ spl_autoload_register(function ($className){
                         <th>Name</th>
                         <th>Edit</th>
                         <th>Delete</th>
+                        <th>Image</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -225,6 +233,7 @@ spl_autoload_register(function ($className){
                             <td><?=$service['title'];?></td>
                             <td><a href="" class="edit" data-toggle="modal" data-target="#myModal2" data-id="<?=$service['id'];?>" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
                             <td><a href="" class="delete" data-toggle="modal" data-target="#myModal3" data-id="<?=$service['id'];?>" ><i class="update fa fa-trash" aria-hidden="true"></i></a></td>
+                            <td><img src="../images/<?=$service['filename'];?>" style="width: 30px;"></td>
                             <!-- Modal Add -->
                             <div id="myModal1" class="modal fade" role="dialog">
                                 <div class="modal-dialog" style="width: 50%;">
@@ -282,10 +291,16 @@ spl_autoload_register(function ($className){
                                             <form class="form-horizontal" action="services.php" method="post">
                                                 <div style="display: table; width: 50%; margin: 0 auto;">
                                                     <div class="form-group">
-                                                        <label for="inputEmail3" class="control-label">Name</label>
+                                                        <label for="inputName" class="control-label">Name</label>
                                                         <div class="">
-                                                            <input type="text" name="title" class="form-control" id="inputEmail3">
+                                                            <input type="text" name="title" class="form-control" id="inputName">
                                                             <input type="hidden" name="id" class="form-control" id="hideEdit" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputFile" class="control-label">File</label>
+                                                        <div class="">
+                                                            <input type="text" name="filename" class="form-control" id="inputFile">
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -300,7 +315,6 @@ spl_autoload_register(function ($className){
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                             <!-- Modal Delete-->
@@ -341,7 +355,7 @@ spl_autoload_register(function ($className){
                     <?php } ?>
                     </tbody>
                 </table>
-                <button class="add btn btn-default" data-toggle="modal" data-target="#myModal1" data-id="<?=$service['id'];?>" >ADD</button>
+                <button class="add btn btn-default" data-toggle="modal" data-target="#myModal1" >ADD</button>
             </div><!-- row -->
         </div><!-- br-pagebody -->
 
@@ -464,7 +478,21 @@ spl_autoload_register(function ($className){
             },
             dataType: 'json'
         })
-    })
+    });
+    $('.edit').click(function(){
+        var id = $(this).data('id');
+        $.ajax({
+            url: 'ajax.php',
+            method: 'get',
+            data: {service_id: id},
+            success: function(data){
+                $('#hideEdit').val(data['id']);
+                $('#inputFile').val(data['filename']);
+                $('#inputName').val(data['title']);
+            },
+            dataType: 'json'
+        })
+    });
 </script>
 </body>
 </html>

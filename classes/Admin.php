@@ -120,7 +120,14 @@ class Admin extends Database
         }
     }
 
-    public function editServices(){}
+    public function editServices($id, $name, $filename){
+        $sql = "UPDATE services SET title = '$name', filename = '$filename' WHERE id = '$id'";
+        if ($this->connect()->query($sql)){
+            echo "<script>alert('Success Edited')</script>";
+        }else{
+            echo "<script>alert('Error Editing')</script>";
+        }
+    }
 
     public function addServices($title, $filename){
 
